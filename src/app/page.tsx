@@ -1,7 +1,52 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState, useEffect } from 'react'
 
 export default function Home() {
+  const [currentSlide, setCurrentSlide] = useState(0)
+  
+  const slides = [
+    {
+      src: "/images/hero/45d4fd79-5ea9-42e2-9eb4-9fec5fa27258.jpg",
+      alt: "Premium Escort in Bangalore - Elegant Companion for Social Events"
+    },
+    {
+      src: "/images/hero/5e31996a-1aa3-4761-948a-7508193a1623.jpg", 
+      alt: "Professional Escort Services Bangalore - Sophisticated Lady Companion"
+    },
+    {
+      src: "/images/hero/afeeef32-78c0-49d2-b27e-09e2cedd539c.jpg",
+      alt: "Luxury Escort Bangalore - Elite Companion for Business Meetings"
+    },
+    {
+      src: "/images/hero/download (21).jpg",
+      alt: "High-Class Escort Services Bangalore - Beautiful Model Companion"
+    }
+  ]
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length)
+  }
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
+  }
+
+  const goToSlide = (index: number) => {
+    setCurrentSlide(index)
+  }
+
+  // Auto-advance slides
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length)
+    }, 5000) // Change slide every 5 seconds
+    
+    return () => clearInterval(timer)
+  }, [slides.length])
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-dark-bg via-darker-bg to-dark-bg">
       {/* Header */}
@@ -79,27 +124,55 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-deep-red mb-6 text-center">Our Elite Companions</h3>
                 
                 {/* Slideshow Container */}
-                <div className="relative h-96 rounded-xl overflow-hidden">
-                  {/* Sample slides - replace with actual images */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-deep-red/20 to-dark-red/20 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-32 h-32 bg-deep-red/30 rounded-full mx-auto mb-4 flex items-center justify-center">
-                        <svg className="w-16 h-16 text-deep-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                        </svg>
-                      </div>
-                      <p className="text-deep-red font-semibold">Elegant Companions</p>
-                      <p className="text-gray-300 text-sm mt-2">Professional & Discreet</p>
+                <div className="relative h-[500px] rounded-xl overflow-hidden group bg-gray-900">
+                  {slides.map((slide, index) => (
+                    <div 
+                      key={index}
+                      className={`absolute inset-0 transition-opacity duration-500 flex items-center justify-center ${
+                        index === currentSlide ? 'opacity-100' : 'opacity-0'
+                      }`}
+                    >
+                      <Image
+                        src={slide.src}
+                        alt={slide.alt}
+                        fill
+                        className="object-contain rounded-lg"
+                        style={{ objectPosition: 'center' }}
+                      />
                     </div>
-                  </div>
+                  ))}
+                  
+                  {/* Navigation Arrows */}
+                  <button 
+                    className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-deep-red/80 hover:bg-deep-red text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    onClick={prevSlide}
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                    </svg>
+                  </button>
+                  <button 
+                    className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-deep-red/80 hover:bg-deep-red text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    onClick={nextSlide}
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
                 </div>
                 
-                {/* Slideshow Navigation */}
+                {/* Slideshow Navigation Dots */}
                 <div className="flex justify-center mt-6 space-x-2">
-                  <button className="w-3 h-3 bg-deep-red rounded-full"></button>
-                  <button className="w-3 h-3 bg-gray-600 rounded-full hover:bg-deep-red transition-colors"></button>
-                  <button className="w-3 h-3 bg-gray-600 rounded-full hover:bg-deep-red transition-colors"></button>
-                  <button className="w-3 h-3 bg-gray-600 rounded-full hover:bg-deep-red transition-colors"></button>
+                  {slides.map((_, index) => (
+                    <button 
+                      key={index}
+                      className={`w-3 h-3 rounded-full transition-colors ${
+                        index === currentSlide ? 'bg-deep-red' : 'bg-gray-600 hover:bg-deep-red'
+                      }`}
+                      onClick={() => goToSlide(index)}
+                      aria-label={`View image ${index + 1}`}
+                    ></button>
+                  ))}
                 </div>
                 
                 {/* Card Info */}

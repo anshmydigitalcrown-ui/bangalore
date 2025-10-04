@@ -7,10 +7,22 @@ export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0)
   
   const heroImages = [
-    { src: '/images/hero/hero1.jpg', alt: 'Premium Escort Services Bangalore' },
-    { src: '/images/hero/hero2.jpg', alt: 'Luxury Companionship Bangalore' },
-    { src: '/images/hero/hero3.jpg', alt: 'Elite Escort Services' },
-    { src: '/images/hero/hero4.jpg', alt: 'Professional Companions Bangalore' }
+    {
+      src: "/images/hero/45d4fd79-5ea9-42e2-9eb4-9fec5fa27258.jpg",
+      alt: "Premium Escort in Bangalore - Elegant Companion for Social Events"
+    },
+    {
+      src: "/images/hero/5e31996a-1aa3-4761-948a-7508193a1623.jpg",
+      alt: "Professional Escort Services Bangalore - Sophisticated Lady Companion"
+    },
+    {
+      src: "/images/hero/afeeef32-78c0-49d2-b27e-09e2cedd539c.jpg",
+      alt: "Luxury Escort Bangalore - Elite Companion for Business Meetings"
+    },
+    {
+      src: "/images/hero/download (21).jpg",
+      alt: "High-Class Escort Services Bangalore - Beautiful Model Companion"
+    }
   ]
 
   useEffect(() => {

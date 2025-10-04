@@ -184,10 +184,6 @@ export default function Home() {
                   fill
                   className="object-contain transition-transform duration-700 group-hover:scale-110"
                 />
-                {/* Badge */}
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-deep-red to-dark-red text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg border border-deep-red/50">
-                  VIP
-                </div>
               </div>
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-white mb-3">VIP Elite Services</h3>
@@ -207,10 +203,6 @@ export default function Home() {
                   fill
                   className="object-contain transition-transform duration-700 group-hover:scale-110"
                 />
-                {/* Badge */}
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-deep-red to-dark-red text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg border border-deep-red/50">
-                  CELEBRITY
-                </div>
               </div>
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-white mb-3">Business Events</h3>
@@ -230,10 +222,6 @@ export default function Home() {
                   fill
                   className="object-contain transition-transform duration-700 group-hover:scale-110"
                 />
-                {/* Badge */}
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-deep-red to-dark-red text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg border border-deep-red/50">
-                  ELITE
-                </div>
               </div>
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-white mb-3">Social Gatherings</h3>
@@ -253,10 +241,6 @@ export default function Home() {
                   fill
                   className="object-contain transition-transform duration-700 group-hover:scale-110"
                 />
-                {/* Badge */}
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-deep-red to-dark-red text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg border border-deep-red/50">
-                  VIP
-                </div>
               </div>
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-white mb-3">Travel Companions</h3>
@@ -276,10 +260,6 @@ export default function Home() {
                   fill
                   className="object-contain transition-transform duration-700 group-hover:scale-110"
                 />
-                {/* Badge */}
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-deep-red to-dark-red text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg border border-deep-red/50">
-                  CELEBRITY
-                </div>
               </div>
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-white mb-3">Private Parties</h3>
@@ -299,10 +279,6 @@ export default function Home() {
                   fill
                   className="object-contain transition-transform duration-700 group-hover:scale-110"
                 />
-                {/* Badge */}
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-deep-red to-dark-red text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg border border-deep-red/50">
-                  ELITE
-                </div>
               </div>
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-white mb-3">Hotel Services</h3>
@@ -322,10 +298,6 @@ export default function Home() {
                   fill
                   className="object-contain transition-transform duration-700 group-hover:scale-110"
                 />
-                {/* Badge */}
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-deep-red to-dark-red text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg border border-deep-red/50">
-                  VIP
-                </div>
               </div>
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-white mb-3">Dinner Dates</h3>
@@ -345,10 +317,6 @@ export default function Home() {
                   fill
                   className="object-contain transition-transform duration-700 group-hover:scale-110"
                 />
-                {/* Badge */}
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-deep-red to-dark-red text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg border border-deep-red/50">
-                  CELEBRITY
-                </div>
               </div>
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-white mb-3">Weekend Getaways</h3>
@@ -368,10 +336,6 @@ export default function Home() {
                   fill
                   className="object-contain transition-transform duration-700 group-hover:scale-110"
                 />
-                {/* Badge */}
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-deep-red to-dark-red text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg border border-deep-red/50">
-                  ELITE
-                </div>
               </div>
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-white mb-3">Outcall Services</h3>
@@ -391,10 +355,6 @@ export default function Home() {
                   fill
                   className="object-contain transition-transform duration-700 group-hover:scale-110"
                 />
-                {/* Badge */}
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-deep-red to-dark-red text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg border border-deep-red/50">
-                  VIP
-                </div>
               </div>
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-white mb-3">High Class Models</h3>
@@ -414,10 +374,6 @@ export default function Home() {
                   fill
                   className="object-contain transition-transform duration-700 group-hover:scale-110"
                 />
-                {/* Badge */}
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-deep-red to-dark-red text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg border border-deep-red/50">
-                  CELEBRITY
-                </div>
               </div>
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-white mb-3">Luxury Services</h3>
@@ -437,10 +393,6 @@ export default function Home() {
                   fill
                   className="object-contain transition-transform duration-700 group-hover:scale-110"
                 />
-                {/* Badge */}
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-deep-red to-dark-red text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg border border-deep-red/50">
-                  ELITE
-                </div>
               </div>
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-white mb-3">24/7 Availability</h3>

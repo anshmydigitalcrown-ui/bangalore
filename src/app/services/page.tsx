@@ -12,8 +12,7 @@ export default function ServicesPage() {
       features: ["24/7 Availability", "Multilingual Companions", "Professional Discretion", "Luxury Experience"],
       price: "Premium Rates",
       image: "/images/services/017f9aa9-9e03-49c9-8e66-42a4af1b8cf1.jpg",
-      duration: "Hourly/Overnight",
-      category: "VIP"
+      duration: "Hourly/Overnight"
     },
     {
       id: 2,
@@ -22,8 +21,7 @@ export default function ServicesPage() {
       features: ["Corporate Events", "Business Dinners", "Conference Companions", "Networking Events"],
       price: "Event Based",
       image: "/images/services/0b5d1573-9e45-410f-8d11-c7ce4dca44ee.jpg",
-      duration: "Event Duration",
-      category: "CELEBRITY"
+      duration: "Event Duration"
     },
     {
       id: 3,
@@ -32,8 +30,7 @@ export default function ServicesPage() {
       features: ["Fine Dining", "Restaurant Recommendations", "Cultural Conversations", "Perfect Etiquette"],
       price: "Evening Rates",
       image: "/images/services/0db1ca63-7b06-430e-b62b-af8a85116dc8.jpg",
-      duration: "2-4 Hours",
-      category: "ELITE"
+      duration: "2-4 Hours"
     },
     {
       id: 4,
@@ -42,8 +39,7 @@ export default function ServicesPage() {
       features: ["Domestic Travel", "International Travel", "Cultural Tours", "Business Trips"],
       price: "Travel Package",
       image: "/images/services/135e3343-4be0-4525-ad1d-8d54eddc4ca6.jpg",
-      duration: "Trip Duration",
-      category: "VIP"
+      duration: "Trip Duration"
     },
     {
       id: 5,
@@ -52,8 +48,7 @@ export default function ServicesPage() {
       features: ["Wedding Events", "Private Parties", "Film Premieres", "Art Exhibitions"],
       price: "Event Package",
       image: "/images/services/27f00dbd-6e40-40cf-b817-f5857d56fe2d.jpg",
-      duration: "4-8 Hours",
-      category: "CELEBRITY"
+      duration: "4-8 Hours"
     },
     {
       id: 6,
@@ -62,8 +57,7 @@ export default function ServicesPage() {
       features: ["5-Star Hotels", "Complete Privacy", "Professional Service", "Satisfaction Guaranteed"],
       price: "Hourly Rates",
       image: "/images/services/307c151e-f300-4791-abe6-bbc9f549443c.jpg",
-      duration: "1-3 Hours",
-      category: "ELITE"
+      duration: "1-3 Hours"
     },
     {
       id: 7,
@@ -72,8 +66,7 @@ export default function ServicesPage() {
       features: ["Secure Locations", "Privacy Assured", "Flexible Timing", "Personal Comfort"],
       price: "Standard Rates",
       image: "/images/services/38d5679b-5fda-4ece-b6ba-65244ccae33e.jpg",
-      duration: "2-4 Hours",
-      category: "VIP"
+      duration: "2-4 Hours"
     },
     {
       id: 8,
@@ -82,8 +75,7 @@ export default function ServicesPage() {
       features: ["Club Visits", "Party Events", "Nightlife Experience", "Social Engagement"],
       price: "Night Rates",
       image: "/images/services/5d8ab558-91fa-4acb-ba05-a48e016f918e.jpg",
-      duration: "4-6 Hours",
-      category: "CELEBRITY"
+      duration: "4-6 Hours"
     },
     {
       id: 9,
@@ -92,8 +84,7 @@ export default function ServicesPage() {
       features: ["Luxury Malls", "Designer Shopping", "Fashion Advice", "Personal Styling"],
       price: "Daytime Rates",
       image: "/images/services/83f1c412-dd63-4621-8d86-4e0f6c302ea6.jpg",
-      duration: "3-5 Hours",
-      category: "ELITE"
+      duration: "3-5 Hours"
     },
     {
       id: 10,
@@ -102,8 +93,7 @@ export default function ServicesPage() {
       features: ["Heritage Tours", "Local Attractions", "Cultural Insights", "Photography Assistance"],
       price: "Tour Package",
       image: "/images/services/972dc74f-18d6-4cb6-bcb7-8778fde4487c.jpg",
-      duration: "Full Day",
-      category: "VIP"
+      duration: "Full Day"
     },
     {
       id: 11,
@@ -112,8 +102,7 @@ export default function ServicesPage() {
       features: ["Professional Massage", "Spa Treatments", "Relaxation Therapy", "Wellness Focus"],
       price: "Spa Package",
       image: "/images/services/afeeef32-78c0-49d2-b27e-09e2cedd539c.jpg",
-      duration: "1-2 Hours",
-      category: "CELEBRITY"
+      duration: "1-2 Hours"
     },
     {
       id: 12,
@@ -122,12 +111,9 @@ export default function ServicesPage() {
       features: ["Resort Stays", "Spa Weekends", "Adventure Activities", "Cultural Exploration"],
       price: "Weekend Package",
       image: "/images/services/download (22).jpg",
-      duration: "2-3 Days",
-      category: "ELITE"
+      duration: "2-3 Days"
     }
   ]
-
-  const categories = ["All", "VIP", "CELEBRITY", "ELITE"]
   
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black">
@@ -159,16 +145,6 @@ export default function ServicesPage() {
             Discover our comprehensive range of elite companionship services designed to exceed your expectations. 
             From intimate dinner dates to sophisticated travel companions, we offer unmatched luxury and discretion.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {categories.map((category) => (
-              <button
-                key={category}
-                className="px-6 py-2 rounded-full border-2 border-deep-red text-white hover:bg-deep-red hover:scale-105 transition-all duration-300"
-              >
-                {category}
-              </button>
-            ))}
-          </div>
         </div>
         {/* Decorative elements */}
         <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-deep-red/20 to-transparent rounded-full blur-xl"></div>
@@ -192,9 +168,6 @@ export default function ServicesPage() {
                     fill
                     className="object-contain transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute top-4 left-4 bg-gradient-to-r from-deep-red to-dark-red text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg border border-deep-red/50">
-                    {service.category}
-                  </div>
                 </div>
 
                 {/* Service Content */}

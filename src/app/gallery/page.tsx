@@ -96,28 +96,28 @@ export default function GalleryPage() {
     // Hero slideshow images
     {
       id: 13,
-      src: "/images/hero/c7e85ad8-7eb4-4c1c-950c-e22e14b24d79.jpg",
+      src: "/images/gallery/143e36d3-7c11-4ee3-9be3-80187803499b.jpg",
       alt: "Professional Escort Services Bangalore - Sophisticated Lady Companion",
       category: "Hero Gallery",
       title: "Sophisticated Companion"
     },
     {
       id: 14,
-      src: "/images/hero/download (23).jpg",
+      src: "/images/gallery/22630993-abae-405e-b93e-f37e845fb4a4.jpg",
       alt: "Elegant Escort Services Bangalore - Beautiful Companion",
       category: "Hero Gallery",
       title: "Elegant Beauty"
     },
     {
       id: 15,
-      src: "/images/hero/download (24).jpg",
+      src: "/images/gallery/543fc971-b904-4b9a-9980-f71a51558998.jpg",
       alt: "Premium Escort Services Bangalore - Luxury Companion",
       category: "Hero Gallery",
       title: "Luxury Companion"
     },
     {
       id: 16,
-      src: "/images/hero/download (25).jpg",
+      src: "/images/gallery/6c256eb5-0b04-4dde-82ae-d3b7f6399f3b.jpg",
       alt: "High-Class Escort Services Bangalore - Beautiful Model Companion",
       category: "Hero Gallery",
       title: "High-Class Model"

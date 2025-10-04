@@ -220,33 +220,223 @@ export default function Home() {
           <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-16">
             Our <span className="text-deep-red">Services</span>
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-dark-bg/50 p-8 rounded-lg border border-deep-red/20 hover:border-deep-red/50 transition-colors">
-              <div className="w-16 h-16 bg-deep-red rounded-lg mb-6 flex items-center justify-center">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+          
+          {/* Service Cards Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Service Card 1 */}
+            <div className="group bg-gradient-to-br from-deep-red/10 via-dark-red/5 to-deep-red/10 rounded-3xl p-6 backdrop-blur-sm border border-deep-red/30 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105">
+              <div className="relative w-full h-80 rounded-2xl overflow-hidden mb-6 bg-gradient-to-br from-gray-900 to-gray-800">
+                <Image
+                  src="/images/services/017f9aa9-9e03-49c9-8e66-42a4af1b8cf1.jpg"
+                  alt="Premium VIP Escort Services Bangalore - Elite Companion"
+                  fill
+                  className="object-contain transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-2xl"></div>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4">24/7 Availability</h3>
-              <p className="text-gray-300">Round-the-clock professional services available whenever you need companionship.</p>
+              <h3 className="text-xl font-bold text-white mb-3">VIP Elite Services</h3>
+              <p className="text-gray-300 text-sm leading-relaxed mb-4">Premium companionship for discerning clients seeking luxury experiences.</p>
+              <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-2.5 rounded-xl font-semibold transition-all duration-300 hover:scale-105">
+                Learn More
+              </button>
             </div>
-            <div className="bg-dark-bg/50 p-8 rounded-lg border border-deep-red/20 hover:border-deep-red/50 transition-colors">
-              <div className="w-16 h-16 bg-deep-red rounded-lg mb-6 flex items-center justify-center">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.031 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
+
+            {/* Service Card 2 */}
+            <div className="group bg-gradient-to-br from-deep-red/10 via-dark-red/5 to-deep-red/10 rounded-3xl p-6 backdrop-blur-sm border border-deep-red/30 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105">
+              <div className="relative w-full h-80 rounded-2xl overflow-hidden mb-6 bg-gradient-to-br from-gray-900 to-gray-800">
+                <Image
+                  src="/images/services/0b5d1573-9e45-410f-8d11-c7ce4dca44ee.jpg"
+                  alt="Business Event Escort Companion Bangalore - Professional Services"
+                  fill
+                  className="object-contain transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-2xl"></div>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4">Discreet & Safe</h3>
-              <p className="text-gray-300">Complete privacy and safety guaranteed with verified professional companions.</p>
+              <h3 className="text-xl font-bold text-white mb-3">Business Events</h3>
+              <p className="text-gray-300 text-sm leading-relaxed mb-4">Professional companions for corporate events and business meetings.</p>
+              <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-2.5 rounded-xl font-semibold transition-all duration-300 hover:scale-105">
+                Learn More
+              </button>
             </div>
-            <div className="bg-dark-bg/50 p-8 rounded-lg border border-deep-red/20 hover:border-deep-red/50 transition-colors">
-              <div className="w-16 h-16 bg-deep-red rounded-lg mb-6 flex items-center justify-center">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                </svg>
+
+            {/* Service Card 3 */}
+            <div className="group bg-gradient-to-br from-deep-red/10 via-dark-red/5 to-deep-red/10 rounded-3xl p-6 backdrop-blur-sm border border-deep-red/30 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105">
+              <div className="relative w-full h-80 rounded-2xl overflow-hidden mb-6 bg-gradient-to-br from-gray-900 to-gray-800">
+                <Image
+                  src="/images/services/0db1ca63-7b06-430e-b62b-af8a85116dc8.jpg"
+                  alt="Social Gathering Escort Services Bangalore - Elegant Companions"
+                  fill
+                  className="object-contain transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-2xl"></div>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4">Premium Quality</h3>
-              <p className="text-gray-300">Elite companions providing sophisticated and professional companionship services.</p>
+              <h3 className="text-xl font-bold text-white mb-3">Social Gatherings</h3>
+              <p className="text-gray-300 text-sm leading-relaxed mb-4">Elegant companions for parties, dinners, and social events.</p>
+              <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-2.5 rounded-xl font-semibold transition-all duration-300 hover:scale-105">
+                Learn More
+              </button>
+            </div>
+
+            {/* Service Card 4 */}
+            <div className="group bg-gradient-to-br from-deep-red/10 via-dark-red/5 to-deep-red/10 rounded-3xl p-6 backdrop-blur-sm border border-deep-red/30 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105">
+              <div className="relative w-full h-80 rounded-2xl overflow-hidden mb-6 bg-gradient-to-br from-gray-900 to-gray-800">
+                <Image
+                  src="/images/services/135e3343-4be0-4525-ad1d-8d54eddc4ca6.jpg"
+                  alt="Travel Companion Escort Services Bangalore - Luxury Travel"
+                  fill
+                  className="object-contain transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-2xl"></div>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Travel Companions</h3>
+              <p className="text-gray-300 text-sm leading-relaxed mb-4">Sophisticated travel partners for business trips and vacations.</p>
+              <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-2.5 rounded-xl font-semibold transition-all duration-300 hover:scale-105">
+                Learn More
+              </button>
+            </div>
+
+            {/* Service Card 5 */}
+            <div className="group bg-gradient-to-br from-deep-red/10 via-dark-red/5 to-deep-red/10 rounded-3xl p-6 backdrop-blur-sm border border-deep-red/30 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105">
+              <div className="relative w-full h-80 rounded-2xl overflow-hidden mb-6 bg-gradient-to-br from-gray-900 to-gray-800">
+                <Image
+                  src="/images/services/27f00dbd-6e40-40cf-b817-f5857d56fe2d.jpg"
+                  alt="Private Party Escort Services Bangalore - Exclusive Entertainment"
+                  fill
+                  className="object-contain transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-2xl"></div>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Private Parties</h3>
+              <p className="text-gray-300 text-sm leading-relaxed mb-4">Exclusive entertainment for private parties and intimate gatherings.</p>
+              <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-2.5 rounded-xl font-semibold transition-all duration-300 hover:scale-105">
+                Learn More
+              </button>
+            </div>
+
+            {/* Service Card 6 */}
+            <div className="group bg-gradient-to-br from-deep-red/10 via-dark-red/5 to-deep-red/10 rounded-3xl p-6 backdrop-blur-sm border border-deep-red/30 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105">
+              <div className="relative w-full h-80 rounded-2xl overflow-hidden mb-6 bg-gradient-to-br from-gray-900 to-gray-800">
+                <Image
+                  src="/images/services/307c151e-f300-4791-abe6-bbc9f549443c.jpg"
+                  alt="Hotel Service Escort Bangalore - Luxury Hotel Companions"
+                  fill
+                  className="object-contain transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-2xl"></div>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Hotel Services</h3>
+              <p className="text-gray-300 text-sm leading-relaxed mb-4">Discreet and professional services at luxury hotels.</p>
+              <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-2.5 rounded-xl font-semibold transition-all duration-300 hover:scale-105">
+                Learn More
+              </button>
+            </div>
+
+            {/* Service Card 7 */}
+            <div className="group bg-gradient-to-br from-deep-red/10 via-dark-red/5 to-deep-red/10 rounded-3xl p-6 backdrop-blur-sm border border-deep-red/30 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105">
+              <div className="relative w-full h-80 rounded-2xl overflow-hidden mb-6 bg-gradient-to-br from-gray-900 to-gray-800">
+                <Image
+                  src="/images/services/38d5679b-5fda-4ece-b6ba-65244ccae33e.jpg"
+                  alt="Dinner Date Escort Services Bangalore - Fine Dining Companions"
+                  fill
+                  className="object-contain transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-2xl"></div>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Dinner Dates</h3>
+              <p className="text-gray-300 text-sm leading-relaxed mb-4">Charming companions for fine dining and romantic evenings.</p>
+              <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-2.5 rounded-xl font-semibold transition-all duration-300 hover:scale-105">
+                Learn More
+              </button>
+            </div>
+
+            {/* Service Card 8 */}
+            <div className="group bg-gradient-to-br from-deep-red/10 via-dark-red/5 to-deep-red/10 rounded-3xl p-6 backdrop-blur-sm border border-deep-red/30 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105">
+              <div className="relative w-full h-80 rounded-2xl overflow-hidden mb-6 bg-gradient-to-br from-gray-900 to-gray-800">
+                <Image
+                  src="/images/services/5d8ab558-91fa-4acb-ba05-a48e016f918e.jpg"
+                  alt="Weekend Escort Services Bangalore - Leisure Companions"
+                  fill
+                  className="object-contain transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-2xl"></div>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Weekend Getaways</h3>
+              <p className="text-gray-300 text-sm leading-relaxed mb-4">Perfect companions for weekend trips and leisure activities.</p>
+              <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-2.5 rounded-xl font-semibold transition-all duration-300 hover:scale-105">
+                Learn More
+              </button>
+            </div>
+
+            {/* Service Card 9 */}
+            <div className="group bg-gradient-to-br from-deep-red/10 via-dark-red/5 to-deep-red/10 rounded-3xl p-6 backdrop-blur-sm border border-deep-red/30 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105">
+              <div className="relative w-full h-80 rounded-2xl overflow-hidden mb-6 bg-gradient-to-br from-gray-900 to-gray-800">
+                <Image
+                  src="/images/services/83f1c412-dd63-4621-8d86-4e0f6c302ea6.jpg"
+                  alt="Outcall Escort Services Bangalore - Home Visit Companions"
+                  fill
+                  className="object-contain transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-2xl"></div>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Outcall Services</h3>
+              <p className="text-gray-300 text-sm leading-relaxed mb-4">Professional companions available for outcall appointments.</p>
+              <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-2.5 rounded-xl font-semibold transition-all duration-300 hover:scale-105">
+                Learn More
+              </button>
+            </div>
+
+            {/* Service Card 10 */}
+            <div className="group bg-gradient-to-br from-deep-red/10 via-dark-red/5 to-deep-red/10 rounded-3xl p-6 backdrop-blur-sm border border-deep-red/30 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105">
+              <div className="relative w-full h-80 rounded-2xl overflow-hidden mb-6 bg-gradient-to-br from-gray-900 to-gray-800">
+                <Image
+                  src="/images/services/972dc74f-18d6-4cb6-bcb7-8778fde4487c.jpg"
+                  alt="High Class Escort Services Bangalore - Premium Model Companions"
+                  fill
+                  className="object-contain transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-2xl"></div>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">High Class Models</h3>
+              <p className="text-gray-300 text-sm leading-relaxed mb-4">Elite model companions for the most discerning clientele.</p>
+              <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-2.5 rounded-xl font-semibold transition-all duration-300 hover:scale-105">
+                Learn More
+              </button>
+            </div>
+
+            {/* Service Card 11 */}
+            <div className="group bg-gradient-to-br from-deep-red/10 via-dark-red/5 to-deep-red/10 rounded-3xl p-6 backdrop-blur-sm border border-deep-red/30 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105">
+              <div className="relative w-full h-80 rounded-2xl overflow-hidden mb-6 bg-gradient-to-br from-gray-900 to-gray-800">
+                <Image
+                  src="/images/services/afeeef32-78c0-49d2-b27e-09e2cedd539c.jpg"
+                  alt="Luxury Escort Services Bangalore - Premium Elite Companions"
+                  fill
+                  className="object-contain transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-2xl"></div>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Luxury Services</h3>
+              <p className="text-gray-300 text-sm leading-relaxed mb-4">Ultimate luxury experiences with our premium companions.</p>
+              <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-2.5 rounded-xl font-semibold transition-all duration-300 hover:scale-105">
+                Learn More
+              </button>
+            </div>
+
+            {/* Service Card 12 */}
+            <div className="group bg-gradient-to-br from-deep-red/10 via-dark-red/5 to-deep-red/10 rounded-3xl p-6 backdrop-blur-sm border border-deep-red/30 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105">
+              <div className="relative w-full h-80 rounded-2xl overflow-hidden mb-6 bg-gradient-to-br from-gray-900 to-gray-800">
+                <Image
+                  src="/images/services/download (22).jpg"
+                  alt="24/7 Escort Services Bangalore - Round the Clock Companions"
+                  fill
+                  className="object-contain transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-2xl"></div>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">24/7 Availability</h3>
+              <p className="text-gray-300 text-sm leading-relaxed mb-4">Round-the-clock professional services available anytime.</p>
+              <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-2.5 rounded-xl font-semibold transition-all duration-300 hover:scale-105">
+                Learn More
+              </button>
             </div>
           </div>
         </div>

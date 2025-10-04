@@ -43,7 +43,7 @@ export default function Home() {
           <div className="hidden md:flex space-x-8">
             <a href="#home" className="text-white hover:text-deep-red transition-colors">Home</a>
             <a href="#services" className="text-white hover:text-deep-red transition-colors">Services</a>
-            <a href="#gallery" className="text-white hover:text-deep-red transition-colors">Gallery</a>
+            <a href="#locations" className="text-white hover:text-deep-red transition-colors">Locations</a>
             <a href="#about" className="text-white hover:text-deep-red transition-colors">About</a>
             <a href="#contact" className="text-white hover:text-deep-red transition-colors">Contact</a>
           </div>
@@ -97,7 +97,7 @@ export default function Home() {
                   Book Now
                 </button>
                 <button className="border-2 border-deep-red text-deep-red hover:bg-deep-red hover:text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300">
-                  View Gallery
+                  View Locations
                 </button>
               </div>
             </div>
@@ -453,18 +453,168 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Gallery Section */}
-      <section id="gallery" className="px-6 py-20">
+      {/* Bangalore Locations Section */}
+      <section id="locations" className="px-6 py-24 bg-gradient-to-b from-black to-darker-bg">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-16">
-            Our <span className="text-deep-red">Gallery</span>
+          <h2 className="text-4xl md:text-6xl font-bold text-center text-white mb-8">
+            Bangalore <span className="text-deep-red">Locations</span>
           </h2>
-          <div className="grid md:grid-cols-4 gap-4">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
-              <div key={item} className="aspect-square bg-gradient-to-br from-deep-red/20 to-dark-red/20 rounded-lg border border-deep-red/30 flex items-center justify-center">
-                <span className="text-deep-red text-lg font-semibold">Image {item}</span>
+          <p className="text-xl text-gray-300 text-center mb-20 max-w-3xl mx-auto leading-relaxed">
+            We provide premium escort services across all major areas of Bangalore. Choose your preferred location for our professional companionship services.
+          </p>
+
+          {/* Locations Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+            {/* Location 1 - Koramangala */}
+            <div className="group bg-gradient-to-br from-black via-darker-bg to-deep-red/10 rounded-2xl p-6 border border-deep-red/30 hover:border-deep-red/50 transition-all duration-300 hover:scale-105 hover:-translate-y-1">
+              <div className="w-12 h-12 bg-gradient-to-r from-deep-red to-dark-red rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
               </div>
-            ))}
+              <h3 className="text-xl font-bold text-white mb-2">Koramangala</h3>
+              <p className="text-gray-300 text-sm mb-4">IT hub with vibrant nightlife and premium hotels</p>
+              <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-2 rounded-lg text-sm font-semibold transition-all duration-300">
+                Book Now
+              </button>
+            </div>
+
+            {/* Location 2 - Indiranagar */}
+            <div className="group bg-gradient-to-br from-black via-darker-bg to-deep-red/10 rounded-2xl p-6 border border-deep-red/30 hover:border-deep-red/50 transition-all duration-300 hover:scale-105 hover:-translate-y-1">
+              <div className="w-12 h-12 bg-gradient-to-r from-deep-red to-dark-red rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Indiranagar</h3>
+              <p className="text-gray-300 text-sm mb-4">Upscale residential area with luxury restaurants</p>
+              <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-2 rounded-lg text-sm font-semibold transition-all duration-300">
+                Book Now
+              </button>
+            </div>
+
+            {/* Location 3 - Whitefield */}
+            <div className="group bg-gradient-to-br from-black via-darker-bg to-deep-red/10 rounded-2xl p-6 border border-deep-red/30 hover:border-deep-red/50 transition-all duration-300 hover:scale-105 hover:-translate-y-1">
+              <div className="w-12 h-12 bg-gradient-to-r from-deep-red to-dark-red rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0H8m8 0v2a2 2 0 002 2h2a2 2 0 002-2V6z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Whitefield</h3>
+              <p className="text-gray-300 text-sm mb-4">Tech corridor with modern infrastructure</p>
+              <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-2 rounded-lg text-sm font-semibold transition-all duration-300">
+                Book Now
+              </button>
+            </div>
+
+            {/* Location 4 - MG Road */}
+            <div className="group bg-gradient-to-br from-black via-darker-bg to-deep-red/10 rounded-2xl p-6 border border-deep-red/30 hover:border-deep-red/50 transition-all duration-300 hover:scale-105 hover:-translate-y-1">
+              <div className="w-12 h-12 bg-gradient-to-r from-deep-red to-dark-red rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">MG Road</h3>
+              <p className="text-gray-300 text-sm mb-4">Central business district with shopping and dining</p>
+              <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-2 rounded-lg text-sm font-semibold transition-all duration-300">
+                Book Now
+              </button>
+            </div>
+
+            {/* Location 5 - Brigade Road */}
+            <div className="group bg-gradient-to-br from-black via-darker-bg to-deep-red/10 rounded-2xl p-6 border border-deep-red/30 hover:border-deep-red/50 transition-all duration-300 hover:scale-105 hover:-translate-y-1">
+              <div className="w-12 h-12 bg-gradient-to-r from-deep-red to-dark-red rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Brigade Road</h3>
+              <p className="text-gray-300 text-sm mb-4">Shopping paradise with entertainment venues</p>
+              <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-2 rounded-lg text-sm font-semibold transition-all duration-300">
+                Book Now
+              </button>
+            </div>
+
+            {/* Location 6 - Electronic City */}
+            <div className="group bg-gradient-to-br from-black via-darker-bg to-deep-red/10 rounded-2xl p-6 border border-deep-red/30 hover:border-deep-red/50 transition-all duration-300 hover:scale-105 hover:-translate-y-1">
+              <div className="w-12 h-12 bg-gradient-to-r from-deep-red to-dark-red rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Electronic City</h3>
+              <p className="text-gray-300 text-sm mb-4">Major IT hub with corporate facilities</p>
+              <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-2 rounded-lg text-sm font-semibold transition-all duration-300">
+                Book Now
+              </button>
+            </div>
+
+            {/* Location 7 - HSR Layout */}
+            <div className="group bg-gradient-to-br from-black via-darker-bg to-deep-red/10 rounded-2xl p-6 border border-deep-red/30 hover:border-deep-red/50 transition-all duration-300 hover:scale-105 hover:-translate-y-1">
+              <div className="w-12 h-12 bg-gradient-to-r from-deep-red to-dark-red rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">HSR Layout</h3>
+              <p className="text-gray-300 text-sm mb-4">Planned residential area with modern amenities</p>
+              <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-2 rounded-lg text-sm font-semibold transition-all duration-300">
+                Book Now
+              </button>
+            </div>
+
+            {/* Location 8 - Jayanagar */}
+            <div className="group bg-gradient-to-br from-black via-darker-bg to-deep-red/10 rounded-2xl p-6 border border-deep-red/30 hover:border-deep-red/50 transition-all duration-300 hover:scale-105 hover:-translate-y-1">
+              <div className="w-12 h-12 bg-gradient-to-r from-deep-red to-dark-red rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 14v3a2 2 0 002 2h4a2 2 0 002-2v-3M7 10l5-5 5 5M7 10h10M7 10v11a1 1 0 001 1h8a1 1 0 001-1V10" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Jayanagar</h3>
+              <p className="text-gray-300 text-sm mb-4">Traditional area with cultural significance</p>
+              <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-2 rounded-lg text-sm font-semibold transition-all duration-300">
+                Book Now
+              </button>
+            </div>
+
+            {/* Location 9 - Hebbal */}
+            <div className="group bg-gradient-to-br from-black via-darker-bg to-deep-red/10 rounded-2xl p-6 border border-deep-red/30 hover:border-deep-red/50 transition-all duration-300 hover:scale-105 hover:-translate-y-1">
+              <div className="w-12 h-12 bg-gradient-to-r from-deep-red to-dark-red rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Hebbal</h3>
+              <p className="text-gray-300 text-sm mb-4">Emerging area with excellent connectivity</p>
+              <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-2 rounded-lg text-sm font-semibold transition-all duration-300">
+                Book Now
+              </button>
+            </div>
+
+            {/* Location 10 - Banashankari */}
+            <div className="group bg-gradient-to-br from-black via-darker-bg to-deep-red/10 rounded-2xl p-6 border border-deep-red/30 hover:border-deep-red/50 transition-all duration-300 hover:scale-105 hover:-translate-y-1">
+              <div className="w-12 h-12 bg-gradient-to-r from-deep-red to-dark-red rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Banashankari</h3>
+              <p className="text-gray-300 text-sm mb-4">Popular residential hub with metro connectivity</p>
+              <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-2 rounded-lg text-sm font-semibold transition-all duration-300">
+                Book Now
+              </button>
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="text-center mt-16">
+            <p className="text-lg text-gray-300 mb-6">
+              Don&apos;t see your location? We provide services across all areas of Bangalore.
+            </p>
+            <button className="bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white px-8 py-3 rounded-xl text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg">
+              Contact for Other Locations
+            </button>
           </div>
         </div>
       </section>

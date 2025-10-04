@@ -43,7 +43,7 @@ export default function Home() {
           <div className="hidden md:flex space-x-8">
             <a href="#home" className="text-white hover:text-deep-red transition-colors">Home</a>
             <a href="#services" className="text-white hover:text-deep-red transition-colors">Services</a>
-            <a href="#locations" className="text-white hover:text-deep-red transition-colors">Locations</a>
+            <a href="#gallery" className="text-white hover:text-deep-red transition-colors">Gallery</a>
             <a href="#about" className="text-white hover:text-deep-red transition-colors">About</a>
             <a href="#contact" className="text-white hover:text-deep-red transition-colors">Contact</a>
           </div>
@@ -97,7 +97,7 @@ export default function Home() {
                   Book Now
                 </button>
                 <button className="border-2 border-deep-red text-deep-red hover:bg-deep-red hover:text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300">
-                  View Locations
+                  View Gallery
                 </button>
               </div>
             </div>
@@ -454,7 +454,7 @@ export default function Home() {
       </section>
 
       {/* Bangalore Locations Section */}
-      <section id="locations" className="px-6 py-24 bg-gradient-to-b from-black to-darker-bg">
+      <section id="gallery" className="px-6 py-24 bg-gradient-to-b from-black to-darker-bg">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-6xl font-bold text-center text-white mb-8">
             Bangalore <span className="text-deep-red">Locations</span>

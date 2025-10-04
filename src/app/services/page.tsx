@@ -7,127 +7,127 @@ export default function ServicesPage() {
   const services = [
     {
       id: 1,
-      title: "VIP Elite Companionship",
-      description: "Premium companionship services for discerning gentlemen who appreciate elegance, sophistication, and discretion.",
+      title: "VIP Elite Services",
+      description: "Premium VIP Service - Exclusive companionship for discerning clients seeking luxury experiences.",
       features: ["24/7 Availability", "Multilingual Companions", "Professional Discretion", "Luxury Experience"],
       price: "Premium Rates",
-      image: "/images/service1.jpg",
+      image: "/images/services/017f9aa9-9e03-49c9-8e66-42a4af1b8cf1.jpg",
       duration: "Hourly/Overnight",
-      category: "Elite"
+      category: "VIP"
     },
     {
       id: 2,
-      title: "Business Event Companions",
-      description: "Professional companions for corporate events, business dinners, and high-profile social gatherings.",
+      title: "Business Events",
+      description: "Star-Like Companions - Professional companions for corporate events and business meetings.",
       features: ["Corporate Events", "Business Dinners", "Conference Companions", "Networking Events"],
       price: "Event Based",
-      image: "/images/service2.jpg",
+      image: "/images/services/0b5d1573-9e45-410f-8d11-c7ce4dca44ee.jpg",
       duration: "Event Duration",
-      category: "Corporate"
+      category: "CELEBRITY"
     },
     {
       id: 3,
-      title: "Travel Companions",
-      description: "Sophisticated travel companions for business trips, leisure travel, and international destinations.",
-      features: ["Domestic Travel", "International Travel", "Cultural Tours", "Business Trips"],
-      price: "Travel Package",
-      image: "/images/service3.jpg",
-      duration: "Trip Duration",
-      category: "Travel"
+      title: "Social Gatherings",
+      description: "Professional Model Services - Elegant companions for parties, dinners, and social events.",
+      features: ["Fine Dining", "Restaurant Recommendations", "Cultural Conversations", "Perfect Etiquette"],
+      price: "Evening Rates",
+      image: "/images/services/0db1ca63-7b06-430e-b62b-af8a85116dc8.jpg",
+      duration: "2-4 Hours",
+      category: "ELITE"
     },
     {
       id: 4,
-      title: "Dinner Date Services",
-      description: "Elegant dinner companions for fine dining experiences at Bangalore's premier restaurants.",
-      features: ["Fine Dining", "Restaurant Recommendations", "Cultural Conversations", "Perfect Etiquette"],
-      price: "Evening Rates",
-      image: "/images/service4.jpg",
-      duration: "2-4 Hours",
-      category: "Social"
+      title: "Travel Companions",
+      description: "Premium VIP Service - Sophisticated travel partners for business trips and vacations.",
+      features: ["Domestic Travel", "International Travel", "Cultural Tours", "Business Trips"],
+      price: "Travel Package",
+      image: "/images/services/135e3343-4be0-4525-ad1d-8d54eddc4ca6.jpg",
+      duration: "Trip Duration",
+      category: "VIP"
     },
     {
       id: 5,
-      title: "Social Event Companions",
-      description: "Charming companions for weddings, parties, premieres, and exclusive social gatherings.",
+      title: "Private Parties",
+      description: "Star-Like Companions - Exclusive entertainment for private parties and intimate gatherings.",
       features: ["Wedding Events", "Private Parties", "Film Premieres", "Art Exhibitions"],
       price: "Event Package",
-      image: "/images/service5.jpg",
+      image: "/images/services/27f00dbd-6e40-40cf-b817-f5857d56fe2d.jpg",
       duration: "4-8 Hours",
-      category: "Social"
+      category: "CELEBRITY"
     },
     {
       id: 6,
-      title: "Weekend Getaway",
-      description: "Perfect companions for weekend retreats to luxury resorts and scenic destinations around Karnataka.",
-      features: ["Resort Stays", "Spa Weekends", "Adventure Activities", "Cultural Exploration"],
-      price: "Weekend Package",
-      image: "/images/service6.jpg",
-      duration: "2-3 Days",
-      category: "Travel"
+      title: "Hotel Services",
+      description: "Professional Model Services - Discreet and professional services at luxury hotels.",
+      features: ["5-Star Hotels", "Complete Privacy", "Professional Service", "Satisfaction Guaranteed"],
+      price: "Hourly Rates",
+      image: "/images/services/307c151e-f300-4791-abe6-bbc9f549443c.jpg",
+      duration: "1-3 Hours",
+      category: "ELITE"
     },
     {
       id: 7,
-      title: "Hotel Visits",
-      description: "Discreet and professional hotel visit services with complete privacy and satisfaction guaranteed.",
-      features: ["5-Star Hotels", "Complete Privacy", "Professional Service", "Satisfaction Guaranteed"],
-      price: "Hourly Rates",
-      image: "/images/service7.jpg",
-      duration: "1-3 Hours",
-      category: "Private"
+      title: "Dinner Dates",
+      description: "Premium VIP Service - Charming companions for fine dining and romantic evenings.",
+      features: ["Secure Locations", "Privacy Assured", "Flexible Timing", "Personal Comfort"],
+      price: "Standard Rates",
+      image: "/images/services/38d5679b-5fda-4ece-b6ba-65244ccae33e.jpg",
+      duration: "2-4 Hours",
+      category: "VIP"
     },
     {
       id: 8,
-      title: "Home Visits",
-      description: "Comfortable and private home visit services in secure and upscale residential areas.",
-      features: ["Secure Locations", "Privacy Assured", "Flexible Timing", "Personal Comfort"],
-      price: "Standard Rates",
-      image: "/images/service8.jpg",
-      duration: "2-4 Hours",
-      category: "Private"
+      title: "Weekend Getaways",
+      description: "Star-Like Companions - Perfect companions for weekend trips and leisure activities.",
+      features: ["Club Visits", "Party Events", "Nightlife Experience", "Social Engagement"],
+      price: "Night Rates",
+      image: "/images/services/5d8ab558-91fa-4acb-ba05-a48e016f918e.jpg",
+      duration: "4-6 Hours",
+      category: "CELEBRITY"
     },
     {
       id: 9,
-      title: "Party Companions",
-      description: "Vibrant and engaging companions for parties, celebrations, and nightlife experiences.",
-      features: ["Club Visits", "Party Events", "Nightlife Experience", "Social Engagement"],
-      price: "Night Rates",
-      image: "/images/service9.jpg",
-      duration: "4-6 Hours",
-      category: "Nightlife"
+      title: "Outcall Services",
+      description: "Professional Model Services - Professional companions available for outcall appointments.",
+      features: ["Luxury Malls", "Designer Shopping", "Fashion Advice", "Personal Styling"],
+      price: "Daytime Rates",
+      image: "/images/services/83f1c412-dd63-4621-8d86-4e0f6c302ea6.jpg",
+      duration: "3-5 Hours",
+      category: "ELITE"
     },
     {
       id: 10,
-      title: "Shopping Companions",
-      description: "Stylish shopping companions for luxury malls, designer boutiques, and exclusive shopping experiences.",
-      features: ["Luxury Malls", "Designer Shopping", "Fashion Advice", "Personal Styling"],
-      price: "Daytime Rates",
-      image: "/images/service10.jpg",
-      duration: "3-5 Hours",
-      category: "Social"
+      title: "High Class Models",
+      description: "Premium VIP Service - Elite model companions for the most discerning clientele.",
+      features: ["Heritage Tours", "Local Attractions", "Cultural Insights", "Photography Assistance"],
+      price: "Tour Package",
+      image: "/images/services/972dc74f-18d6-4cb6-bcb7-8778fde4487c.jpg",
+      duration: "Full Day",
+      category: "VIP"
     },
     {
       id: 11,
-      title: "Cultural Tour Guides",
-      description: "Knowledgeable companions for exploring Bangalore's rich culture, heritage sites, and local attractions.",
-      features: ["Heritage Tours", "Local Attractions", "Cultural Insights", "Photography Assistance"],
-      price: "Tour Package",
-      image: "/images/service11.jpg",
-      duration: "Full Day",
-      category: "Cultural"
+      title: "Luxury Services",
+      description: "Star-Like Companions - Ultimate luxury experiences with our premium companions.",
+      features: ["Professional Massage", "Spa Treatments", "Relaxation Therapy", "Wellness Focus"],
+      price: "Spa Package",
+      image: "/images/services/afeeef32-78c0-49d2-b27e-09e2cedd539c.jpg",
+      duration: "1-2 Hours",
+      category: "CELEBRITY"
     },
     {
       id: 12,
-      title: "Massage & Spa Services",
-      description: "Relaxing massage and spa services provided by trained professionals in luxury spa environments.",
-      features: ["Professional Massage", "Spa Treatments", "Relaxation Therapy", "Wellness Focus"],
-      price: "Spa Package",
-      image: "/images/service12.jpg",
-      duration: "1-2 Hours",
-      category: "Wellness"
+      title: "24/7 Availability",
+      description: "Professional Model Services - Round-the-clock professional services available anytime.",
+      features: ["Resort Stays", "Spa Weekends", "Adventure Activities", "Cultural Exploration"],
+      price: "Weekend Package",
+      image: "/images/services/download (22).jpg",
+      duration: "2-3 Days",
+      category: "ELITE"
     }
   ]
 
-  const categories = ["All", "Elite", "Corporate", "Travel", "Social", "Private", "Nightlife", "Cultural", "Wellness"]
+  const categories = ["All", "VIP", "CELEBRITY", "ELITE"]
   
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black">

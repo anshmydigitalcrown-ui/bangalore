@@ -208,7 +208,7 @@ export default function GalleryPage() {
                     src={image.src}
                     alt={image.alt}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="object-contain transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">

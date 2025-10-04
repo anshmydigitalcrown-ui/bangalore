@@ -178,32 +178,31 @@ export default function ServicesPage() {
       {/* Services Grid */}
       <section className="py-16 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             {services.map((service) => (
               <div
                 key={service.id}
-                className="bg-gradient-to-br from-black via-gray-900 to-black rounded-2xl overflow-hidden border-2 border-deep-red/30 hover:border-deep-red transition-all duration-300 group hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-deep-red/20"
+                className="group bg-gradient-to-br from-black via-gray-900 to-deep-red/10 rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl border border-deep-red/30 transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:border-deep-red/50"
               >
                 {/* Service Image */}
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative w-full h-96 bg-gradient-to-br from-black via-gray-900 to-deep-red/5">
                   <Image
                     src={service.image}
                     alt={service.title}
                     fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="object-contain transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute top-4 right-4 bg-deep-red text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  <div className="absolute top-4 left-4 bg-gradient-to-r from-deep-red to-dark-red text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg border border-deep-red/50">
                     {service.category}
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
                 </div>
 
                 {/* Service Content */}
-                <div className="p-6">
+                <div className="p-8">
                   <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-deep-red transition-colors duration-300">
                     {service.title}
                   </h3>
-                  <p className="text-gray-300 mb-4 leading-relaxed">
+                  <p className="text-gray-300 text-base leading-relaxed mb-6">
                     {service.description}
                   </p>
 
@@ -236,7 +235,7 @@ export default function ServicesPage() {
                   <div className="flex gap-3">
                     <Link
                       href="/#contact"
-                      className="flex-1 bg-gradient-to-r from-deep-red to-dark-red text-white text-center py-3 rounded-xl hover:scale-105 transition-transform duration-300 font-semibold shadow-lg"
+                      className="flex-1 bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white text-center py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl border border-deep-red/50"
                     >
                       Book Now
                     </Link>
@@ -251,9 +250,7 @@ export default function ServicesPage() {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* Why Choose Us Section */}
+      </section>      {/* Why Choose Us Section */}
       <section className="py-16 px-6 bg-gradient-to-r from-deep-red/10 via-black to-dark-red/10">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-12">

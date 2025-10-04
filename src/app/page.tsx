@@ -120,15 +120,15 @@ export default function Home() {
             
             {/* Right side - Photo Slideshow */}
             <div className="relative">
-              <div className="bg-gradient-to-br from-deep-red/10 to-dark-red/10 rounded-3xl p-6 backdrop-blur-sm border border-deep-red/30 shadow-2xl">
-                <h3 className="text-2xl font-bold text-deep-red mb-6 text-center">Our Elite Companions</h3>
+              <div className="bg-gradient-to-br from-deep-red/10 to-dark-red/10 rounded-3xl p-4 backdrop-blur-sm border border-deep-red/30 shadow-2xl">
+                <h3 className="text-xl font-bold text-deep-red mb-4 text-center">Our Elite Companions</h3>
                 
                 {/* Slideshow Container */}
-                <div className="relative w-full aspect-[3/4] max-w-sm mx-auto rounded-2xl overflow-hidden group bg-gradient-to-br from-gray-900 to-gray-800 shadow-xl">
+                <div className="relative w-full h-80 max-w-xs mx-auto rounded-2xl overflow-hidden group bg-gradient-to-br from-gray-900 to-gray-800 shadow-xl">
                   {slides.map((slide, index) => (
                     <div 
                       key={index}
-                      className={`absolute inset-0 transition-all duration-700 ease-in-out ${
+                      className={`absolute inset-0 transition-all duration-700 ease-in-out flex items-center justify-center ${
                         index === currentSlide ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
                       }`}
                     >
@@ -136,49 +136,47 @@ export default function Home() {
                         src={slide.src}
                         alt={slide.alt}
                         fill
-                        className="object-cover rounded-2xl"
-                        style={{ objectPosition: 'center top' }}
+                        className="object-contain"
+                        style={{ objectPosition: 'center' }}
                       />
-                      {/* Subtle gradient overlay for better text readability if needed */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-2xl"></div>
                     </div>
                   ))}
                   
                   {/* Navigation Arrows */}
                   <button 
-                    className="absolute left-3 top-1/2 transform -translate-y-1/2 bg-deep-red/90 hover:bg-deep-red text-white p-2.5 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-lg hover:scale-110"
+                    className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-deep-red/90 hover:bg-deep-red text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-lg hover:scale-110"
                     onClick={prevSlide}
                     aria-label="Previous image"
                   >
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
                     </svg>
                   </button>
                   <button 
-                    className="absolute right-3 top-1/2 transform -translate-y-1/2 bg-deep-red/90 hover:bg-deep-red text-white p-2.5 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-lg hover:scale-110"
+                    className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-deep-red/90 hover:bg-deep-red text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-lg hover:scale-110"
                     onClick={nextSlide}
                     aria-label="Next image"
                   >
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                     </svg>
                   </button>
                   
                   {/* Image Counter */}
-                  <div className="absolute top-4 right-4 bg-black/60 text-white px-3 py-1 rounded-full text-sm font-medium">
+                  <div className="absolute top-2 right-2 bg-black/60 text-white px-2 py-1 rounded-full text-xs font-medium">
                     {currentSlide + 1} / {slides.length}
                   </div>
                 </div>
                 
                 {/* Slideshow Navigation Dots */}
-                <div className="flex justify-center mt-6 space-x-3">
+                <div className="flex justify-center mt-4 space-x-2">
                   {slides.map((_, index) => (
                     <button 
                       key={index}
                       className={`transition-all duration-300 rounded-full ${
                         index === currentSlide 
-                          ? 'w-8 h-3 bg-deep-red shadow-lg' 
-                          : 'w-3 h-3 bg-gray-500 hover:bg-deep-red/70 hover:scale-125'
+                          ? 'w-6 h-2 bg-deep-red shadow-lg' 
+                          : 'w-2 h-2 bg-gray-500 hover:bg-deep-red/70 hover:scale-125'
                       }`}
                       onClick={() => goToSlide(index)}
                       aria-label={`View image ${index + 1}`}
@@ -187,16 +185,16 @@ export default function Home() {
                 </div>
                 
                 {/* Card Info */}
-                <div className="mt-6 text-center space-y-3">
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    Browse through our collection of verified premium escorts
+                <div className="mt-4 text-center space-y-3">
+                  <p className="text-gray-300 text-xs leading-relaxed">
+                    Browse our verified premium escorts
                   </p>
-                  <div className="flex justify-center gap-4">
-                    <button className="bg-deep-red hover:bg-dark-red text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 hover:scale-105 shadow-lg">
+                  <div className="flex justify-center gap-2">
+                    <button className="bg-deep-red hover:bg-dark-red text-white px-4 py-2 rounded-lg text-xs font-semibold transition-all duration-300 hover:scale-105 shadow-lg">
                       View Gallery
                     </button>
-                    <button className="border-2 border-deep-red text-deep-red hover:bg-deep-red hover:text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 hover:scale-105">
-                      Contact Now
+                    <button className="border border-deep-red text-deep-red hover:bg-deep-red hover:text-white px-4 py-2 rounded-lg text-xs font-semibold transition-all duration-300 hover:scale-105">
+                      Contact
                     </button>
                   </div>
                 </div>

@@ -44,7 +44,7 @@ export default function Home() {
           <div className="hidden md:flex space-x-8">
             <a href="#home" className="text-white hover:text-deep-red transition-colors">Home</a>
             <Link href="/services" className="text-white hover:text-deep-red transition-colors">Services</Link>
-            <a href="#gallery" className="text-white hover:text-deep-red transition-colors">Gallery</a>
+            <Link href="/gallery" className="text-white hover:text-deep-red transition-colors">Gallery</Link>
             <a href="#about" className="text-white hover:text-deep-red transition-colors">About</a>
             <a href="#contact" className="text-white hover:text-deep-red transition-colors">Contact</a>
           </div>
@@ -709,10 +709,10 @@ export default function Home() {
                   <span className="w-1.5 h-1.5 bg-deep-red rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
                   Services
                 </Link></li>
-                <li><a href="#gallery" className="text-gray-300 hover:text-deep-red transition-colors duration-300 flex items-center group">
+                <li><Link href="/gallery" className="text-gray-300 hover:text-deep-red transition-colors duration-300 flex items-center group">
                   <span className="w-1.5 h-1.5 bg-deep-red rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
                   Gallery
-                </a></li>
+                </Link></li>
                 <li><a href="#contact" className="text-gray-300 hover:text-deep-red transition-colors duration-300 flex items-center group">
                   <span className="w-1.5 h-1.5 bg-deep-red rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
                   Contact

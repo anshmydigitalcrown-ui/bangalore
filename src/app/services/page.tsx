@@ -126,7 +126,7 @@ export default function ServicesPage() {
           <div className="hidden md:flex space-x-8">
             <Link href="/" className="text-white hover:text-deep-red transition-colors duration-300">Home</Link>
             <Link href="/services" className="text-deep-red font-semibold">Services</Link>
-            <Link href="/#gallery" className="text-white hover:text-deep-red transition-colors duration-300">Gallery</Link>
+            <Link href="/gallery" className="text-white hover:text-deep-red transition-colors duration-300">Gallery</Link>
             <Link href="/#contact" className="text-white hover:text-deep-red transition-colors duration-300">Contact</Link>
           </div>
           <div className="flex gap-3">
@@ -340,7 +340,7 @@ export default function ServicesPage() {
               <ul className="space-y-3">
                 <li><Link href="/" className="text-gray-300 hover:text-deep-red transition-colors">Home</Link></li>
                 <li><Link href="/services" className="text-gray-300 hover:text-deep-red transition-colors">Services</Link></li>
-                <li><Link href="/#gallery" className="text-gray-300 hover:text-deep-red transition-colors">Gallery</Link></li>
+                <li><Link href="/gallery" className="text-gray-300 hover:text-deep-red transition-colors">Gallery</Link></li>
                 <li><Link href="/#contact" className="text-gray-300 hover:text-deep-red transition-colors">Contact</Link></li>
               </ul>
             </div>

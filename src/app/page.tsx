@@ -25,16 +25,95 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section id="home" className="relative min-h-screen flex items-center">
-        {/* Hero Image - Full Screen */}
-        <div className="w-full h-screen relative">
-          <Image
-            src="/images/hero/hero-banner.jpg"
-            alt="Loconto Escorts Bangalore"
-            fill
-            className="object-cover object-center"
-            priority
-          />
+      <section id="home" className="relative min-h-screen flex items-center py-20 px-6">
+        <div className="max-w-7xl mx-auto w-full">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left side - Content */}
+            <div className="text-left space-y-6">
+              <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
+                Premium <span className="text-yellow-400">Escorts</span> in Bangalore
+              </h1>
+              <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
+                Experience the finest companionship services in Bangalore with our elite and sophisticated escorts
+              </p>
+              <p className="text-lg text-gray-400 leading-relaxed">
+                Our premium escort services offer you the perfect blend of beauty, intelligence, and elegance. 
+                Whether you need a companion for social events, business meetings, or intimate moments, 
+                our professional escorts are here to fulfill your desires with complete discretion and satisfaction.
+              </p>
+              
+              {/* Key Features */}
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                  <span className="text-white">24/7 Available Services</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                  <span className="text-white">Verified & Professional Escorts</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                  <span className="text-white">Complete Privacy & Discretion</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                  <span className="text-white">Luxury Experience Guaranteed</span>
+                </div>
+              </div>
+              
+              {/* Action Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <button className="bg-yellow-400 hover:bg-yellow-500 text-black px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
+                  View Our Gallery
+                </button>
+                <button className="border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
+                  Contact Us Now
+                </button>
+              </div>
+            </div>
+            
+            {/* Right side - Photo Slideshow */}
+            <div className="relative">
+              <div className="bg-gradient-to-br from-yellow-400/10 to-yellow-600/10 rounded-2xl p-8 backdrop-blur-sm border border-yellow-400/20">
+                <h3 className="text-2xl font-bold text-yellow-400 mb-6 text-center">Our Elite Companions</h3>
+                
+                {/* Slideshow Container */}
+                <div className="relative h-96 rounded-xl overflow-hidden">
+                  {/* Sample slides - replace with actual images */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="w-32 h-32 bg-yellow-400/30 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <svg className="w-16 h-16 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                      </div>
+                      <p className="text-yellow-400 font-semibold">Elegant Companions</p>
+                      <p className="text-gray-300 text-sm mt-2">Professional & Discreet</p>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Slideshow Navigation */}
+                <div className="flex justify-center mt-6 space-x-2">
+                  <button className="w-3 h-3 bg-yellow-400 rounded-full"></button>
+                  <button className="w-3 h-3 bg-gray-600 rounded-full hover:bg-yellow-400 transition-colors"></button>
+                  <button className="w-3 h-3 bg-gray-600 rounded-full hover:bg-yellow-400 transition-colors"></button>
+                  <button className="w-3 h-3 bg-gray-600 rounded-full hover:bg-yellow-400 transition-colors"></button>
+                </div>
+                
+                {/* Card Info */}
+                <div className="mt-6 text-center">
+                  <p className="text-gray-300 text-sm">
+                    Browse through our collection of verified premium escorts
+                  </p>
+                  <button className="mt-3 text-yellow-400 hover:text-yellow-300 font-semibold text-sm transition-colors">
+                    View Full Gallery →
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

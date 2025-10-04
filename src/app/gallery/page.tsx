@@ -121,6 +121,56 @@ export default function GalleryPage() {
       alt: "High-Class Escort Services Bangalore - Beautiful Model Companion",
       category: "Hero Gallery",
       title: "High-Class Model"
+    },
+    // New Gallery Images
+    {
+      id: 17,
+      src: "/images/gallery/6e186d35-29c8-4afd-81ec-db682700698b.jpg",
+      alt: "Premium Escort Services Bangalore - Elegant Beauty",
+      category: "Premium Collection",
+      title: "Elegant Beauty"
+    },
+    {
+      id: 18,
+      src: "/images/gallery/823aba5e-8e3d-440f-97b4-142fe4900911.jpg",
+      alt: "Luxury Escort Services Bangalore - Sophisticated Model",
+      category: "Premium Collection",
+      title: "Sophisticated Model"
+    },
+    {
+      id: 19,
+      src: "/images/gallery/85797e8d-009b-43ce-8e62-d0810f864001.jpg",
+      alt: "High-Class Escort Services Bangalore - Professional Companion",
+      category: "Premium Collection",
+      title: "Professional Companion"
+    },
+    {
+      id: 20,
+      src: "/images/gallery/d0c60799-1b90-4c30-b6d8-1e4623da4f39.jpg",
+      alt: "Elite Escort Services Bangalore - Luxury Model",
+      category: "Premium Collection",
+      title: "Luxury Model"
+    },
+    {
+      id: 21,
+      src: "/images/gallery/d55f7364-bfad-4d1a-aadd-565b5df9d3fd.jpg",
+      alt: "Exclusive Escort Services Bangalore - Beautiful Companion",
+      category: "Premium Collection",
+      title: "Beautiful Companion"
+    },
+    {
+      id: 22,
+      src: "/images/gallery/fa985e68-66f2-4144-b386-bb77732c5099.jpg",
+      alt: "Premium Escort Services Bangalore - Stunning Beauty",
+      category: "Premium Collection",
+      title: "Stunning Beauty"
+    },
+    {
+      id: 23,
+      src: "/images/gallery/Girl Photography.jpg",
+      alt: "Professional Escort Services Bangalore - Artistic Photography",
+      category: "Premium Collection",
+      title: "Artistic Beauty"
     }
   ]
 

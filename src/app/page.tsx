@@ -6,6 +6,7 @@ import Link from 'next/link'
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   
   const heroImages = [
     {
@@ -36,11 +37,13 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-darker-bg">
       {/* Navigation */}
-      <nav className="relative z-50 px-6 py-4 bg-black backdrop-blur-md border-b-2 border-deep-red shadow-lg shadow-black/50">
+      <nav className="relative z-50 px-4 sm:px-6 py-4 bg-black backdrop-blur-md border-b-2 border-deep-red shadow-lg shadow-black/50">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="text-2xl font-bold text-white">
+          <div className="text-xl sm:text-2xl font-bold text-white">
             <span className="text-deep-red">LOCONTO</span> ESCORTS
           </div>
+          
+          {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             <a href="#home" className="text-white hover:text-deep-red transition-colors">Home</a>
             <Link href="/services" className="text-white hover:text-deep-red transition-colors">Services</Link>
@@ -48,7 +51,9 @@ export default function Home() {
             <a href="#about" className="text-white hover:text-deep-red transition-colors">About</a>
             <a href="#contact" className="text-white hover:text-deep-red transition-colors">Contact</a>
           </div>
-          <div className="flex gap-3">
+          
+          {/* Desktop Action Buttons */}
+          <div className="hidden md:flex gap-3">
             <button className="bg-deep-red hover:bg-dark-red text-white px-6 py-2 rounded-lg transition-colors shadow-lg flex items-center gap-2">
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
@@ -62,61 +67,101 @@ export default function Home() {
               WhatsApp
             </a>
           </div>
+
+          {/* Mobile Menu Button */}
+          <div className="md:hidden flex items-center gap-2">
+            <a href="https://wa.me/919999999999" target="_blank" className="bg-green-500 hover:bg-green-600 text-white p-2 rounded-lg transition-colors shadow-lg">
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+              </svg>
+            </a>
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="text-white p-2 rounded-lg hover:bg-deep-red transition-colors"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {mobileMenuOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="md:hidden absolute top-full left-0 right-0 bg-black border-b-2 border-deep-red shadow-lg">
+            <div className="px-4 py-4 space-y-4">
+              <a href="#home" onClick={() => setMobileMenuOpen(false)} className="block text-white hover:text-deep-red transition-colors py-2">Home</a>
+              <Link href="/services" onClick={() => setMobileMenuOpen(false)} className="block text-white hover:text-deep-red transition-colors py-2">Services</Link>
+              <Link href="/gallery" onClick={() => setMobileMenuOpen(false)} className="block text-white hover:text-deep-red transition-colors py-2">Gallery</Link>
+              <a href="#about" onClick={() => setMobileMenuOpen(false)} className="block text-white hover:text-deep-red transition-colors py-2">About</a>
+              <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="block text-white hover:text-deep-red transition-colors py-2">Contact</a>
+              <button className="w-full bg-deep-red hover:bg-dark-red text-white px-6 py-3 rounded-lg transition-colors shadow-lg flex items-center justify-center gap-2 mt-4">
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+                Call Now
+              </button>
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="relative min-h-screen flex items-center py-20 px-6">
+      <section id="home" className="relative min-h-screen flex items-center py-12 sm:py-20 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto w-full">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left side - Content */}
-            <div className="text-left space-y-6">
-              <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
+            <div className="text-center lg:text-left space-y-4 sm:space-y-6 order-2 lg:order-1">
+              <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
                 Premium <span className="text-deep-red">Escorts</span> in Bangalore
               </h1>
-              <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
+              <p className="text-lg sm:text-xl md:text-2xl text-gray-300 leading-relaxed">
                 Experience the finest companionship services in Bangalore with our elite and sophisticated escorts
               </p>
-              <p className="text-lg text-gray-400 leading-relaxed">
+              <p className="text-base sm:text-lg text-gray-400 leading-relaxed">
                 Our premium escort services offer you the perfect blend of beauty, intelligence, and elegance.
                 Whether you need a companion for social events, business meetings, or intimate moments,
                 our professional escorts are here to fulfill your desires with complete discretion and satisfaction.
               </p>
 
               {/* Key Features */}
-              <div className="space-y-3">
-                <div className="flex items-center gap-3">
+              <div className="space-y-2 sm:space-y-3">
+                <div className="flex items-center gap-3 justify-center lg:justify-start">
                   <div className="w-2 h-2 bg-deep-red rounded-full"></div>
-                  <span className="text-white">24/7 Available Services</span>
+                  <span className="text-white text-sm sm:text-base">24/7 Available Services</span>
                 </div>
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3 justify-center lg:justify-start">
                   <div className="w-2 h-2 bg-deep-red rounded-full"></div>
-                  <span className="text-white">Verified & Professional Escorts</span>
+                  <span className="text-white text-sm sm:text-base">Verified & Professional Escorts</span>
                 </div>
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3 justify-center lg:justify-start">
                   <div className="w-2 h-2 bg-deep-red rounded-full"></div>
-                  <span className="text-white">Complete Privacy & Discretion</span>
+                  <span className="text-white text-sm sm:text-base">Complete Privacy & Discretion</span>
                 </div>
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3 justify-center lg:justify-start">
                   <div className="w-2 h-2 bg-deep-red rounded-full"></div>
-                  <span className="text-white">Luxury Experience Guaranteed</span>
+                  <span className="text-white text-sm sm:text-base">Luxury Experience Guaranteed</span>
                 </div>
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <button className="bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4 justify-center lg:justify-start">
+                <button className="bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-base sm:text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg">
                   Book Now
                 </button>
-                <button className="border-2 border-deep-red text-deep-red hover:bg-deep-red hover:text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300">
+                <Link href="/gallery" className="border-2 border-deep-red text-deep-red hover:bg-deep-red hover:text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-base sm:text-lg font-semibold transition-all duration-300 text-center">
                   View Gallery
-                </button>
+                </Link>
               </div>
             </div>
 
             {/* Right side - Image Slideshow */}
-            <div className="relative">
-              <div className="relative w-full h-[600px] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-black via-darker-bg to-deep-red/20 border border-deep-red/30">
+            <div className="relative order-1 lg:order-2">
+              <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[600px] rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-black via-darker-bg to-deep-red/20 border border-deep-red/30">
                 {heroImages.map((image, index) => (
                   <div
                     key={index}
@@ -137,23 +182,23 @@ export default function Home() {
                 {/* Navigation buttons */}
                 <button
                   onClick={() => setCurrentSlide((prev) => (prev - 1 + heroImages.length) % heroImages.length)}
-                  className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white p-3 rounded-full transition-all duration-300 hover:scale-110 shadow-lg border border-deep-red/50"
+                  className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white p-2 sm:p-3 rounded-full transition-all duration-300 hover:scale-110 shadow-lg border border-deep-red/50"
                 >
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                   </svg>
                 </button>
                 <button
                   onClick={() => setCurrentSlide((prev) => (prev + 1) % heroImages.length)}
-                  className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white p-3 rounded-full transition-all duration-300 hover:scale-110 shadow-lg border border-deep-red/50"
+                  className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white p-2 sm:p-3 rounded-full transition-all duration-300 hover:scale-110 shadow-lg border border-deep-red/50"
                 >
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </button>
 
                 {/* Slide indicators */}
-                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                <div className="absolute bottom-2 sm:bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
                   {heroImages.map((_, index) => (
                     <button
                       key={index}
@@ -175,20 +220,20 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="px-6 py-24 bg-gradient-to-b from-darker-bg to-black">
+      <section id="services" className="px-4 sm:px-6 py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-darker-bg to-black">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl md:text-6xl font-bold text-center text-white mb-8">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white mb-6 sm:mb-8">
             Our Premium <span className="text-deep-red">Services</span>
           </h2>
-          <p className="text-xl text-gray-300 text-center mb-20 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-300 text-center mb-12 sm:mb-16 lg:mb-20 max-w-3xl mx-auto leading-relaxed px-4">
             Discover our exclusive range of professional companionship services designed for the most discerning clientele
           </p>
 
           {/* Service Cards Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
             {/* Service Card 1 */}
-            <div className="group bg-gradient-to-br from-black via-darker-bg to-deep-red/10 rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl border border-deep-red/30 transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:border-deep-red/50">
-              <div className="relative w-full h-96 bg-gradient-to-br from-black via-darker-bg to-deep-red/5">
+            <div className="group bg-gradient-to-br from-black via-darker-bg to-deep-red/10 rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl border border-deep-red/30 transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:border-deep-red/50">
+              <div className="relative w-full h-64 sm:h-80 lg:h-96 bg-gradient-to-br from-black via-darker-bg to-deep-red/5">
                 <Image
                   src="/images/services/017f9aa9-9e03-49c9-8e66-42a4af1b8cf1.jpg"
                   alt="Premium VIP Escort Services Bangalore - Elite Companion"
@@ -196,18 +241,18 @@ export default function Home() {
                   className="object-contain transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-white mb-3">VIP Elite Services</h3>
-                <p className="text-gray-300 text-base leading-relaxed mb-6">Premium VIP Service - Exclusive companionship for discerning clients seeking luxury experiences.</p>
-                <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl border border-deep-red/50">
+              <div className="p-4 sm:p-6 lg:p-8">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-2 sm:mb-3">VIP Elite Services</h3>
+                <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-4 sm:mb-6">Premium VIP Service - Exclusive companionship for discerning clients seeking luxury experiences.</p>
+                <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-3 sm:py-4 rounded-xl lg:rounded-2xl font-bold text-sm sm:text-base lg:text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl border border-deep-red/50">
                   Book Now
                 </button>
               </div>
             </div>
 
             {/* Service Card 2 */}
-            <div className="group bg-gradient-to-br from-black via-darker-bg to-deep-red/10 rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl border border-deep-red/30 transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:border-deep-red/50">
-              <div className="relative w-full h-96 bg-gradient-to-br from-black via-darker-bg to-deep-red/5">
+            <div className="group bg-gradient-to-br from-black via-darker-bg to-deep-red/10 rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl border border-deep-red/30 transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:border-deep-red/50">
+              <div className="relative w-full h-64 sm:h-80 lg:h-96 bg-gradient-to-br from-black via-darker-bg to-deep-red/5">
                 <Image
                   src="/images/services/0b5d1573-9e45-410f-8d11-c7ce4dca44ee.jpg"
                   alt="Business Event Escort Companion Bangalore - Professional Services"

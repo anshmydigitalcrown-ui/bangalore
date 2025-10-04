@@ -41,61 +41,112 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero Section with Slideshow */}
-      <section id="home" className="relative h-screen overflow-hidden">
-        {/* Slideshow */}
-        <div className="absolute inset-0">
-          {heroImages.map((image, index) => (
-            <div
-              key={index}
-              className={`absolute inset-0 transition-opacity duration-1000 ${
-                index === currentSlide ? 'opacity-100' : 'opacity-0'
-              }`}
-            >
-              <Image
-                src={image.src}
-                alt={image.alt}
-                fill
-                className="object-cover"
-                priority={index === 0}
-              />
-              <div className="absolute inset-0 bg-black/50"></div>
-            </div>
-          ))}
-        </div>
+      {/* Hero Section */}
+      <section id="home" className="relative min-h-screen flex items-center py-20 px-6">
+        <div className="max-w-7xl mx-auto w-full">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left side - Content */}
+            <div className="text-left space-y-6">
+              <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
+                Premium <span className="text-deep-red">Escorts</span> in Bangalore
+              </h1>
+              <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
+                Experience the finest companionship services in Bangalore with our elite and sophisticated escorts
+              </p>
+              <p className="text-lg text-gray-400 leading-relaxed">
+                Our premium escort services offer you the perfect blend of beauty, intelligence, and elegance.
+                Whether you need a companion for social events, business meetings, or intimate moments,
+                our professional escorts are here to fulfill your desires with complete discretion and satisfaction.
+              </p>
 
-        {/* Hero Content */}
-        <div className="relative z-10 h-full flex items-center justify-center text-center px-6">
-          <div className="max-w-4xl">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-              Premium <span className="text-deep-red">Escort</span><br />
-              Services in <span className="text-deep-red">Bangalore</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
-              Experience the finest companionship with our elite, professional, and discreet services
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-deep-red hover:bg-dark-red text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105">
-                Book Now
-              </button>
-              <button className="border-2 border-white text-white hover:bg-white hover:text-deep-red px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
-                Learn More
-              </button>
+              {/* Key Features */}
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-deep-red rounded-full"></div>
+                  <span className="text-white">24/7 Available Services</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-deep-red rounded-full"></div>
+                  <span className="text-white">Verified & Professional Escorts</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-deep-red rounded-full"></div>
+                  <span className="text-white">Complete Privacy & Discretion</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-deep-red rounded-full"></div>
+                  <span className="text-white">Luxury Experience Guaranteed</span>
+                </div>
+              </div>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <button className="bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg">
+                  Book Now
+                </button>
+                <button className="border-2 border-deep-red text-deep-red hover:bg-deep-red hover:text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300">
+                  View Gallery
+                </button>
+              </div>
+            </div>
+
+            {/* Right side - Image Slideshow */}
+            <div className="relative">
+              <div className="relative w-full h-[600px] rounded-3xl overflow-hidden shadow-2xl">
+                {heroImages.map((image, index) => (
+                  <div
+                    key={index}
+                    className={`absolute inset-0 transition-all duration-1000 ${
+                      index === currentSlide ? 'opacity-100 scale-100' : 'opacity-0 scale-110'
+                    }`}
+                  >
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      fill
+                      className="object-contain bg-gradient-to-br from-gray-100 to-gray-200"
+                      priority={index === 0}
+                    />
+                  </div>
+                ))}
+
+                {/* Navigation buttons */}
+                <button
+                  onClick={() => setCurrentSlide((prev) => (prev - 1 + heroImages.length) % heroImages.length)}
+                  className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 hover:scale-110"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <button
+                  onClick={() => setCurrentSlide((prev) => (prev + 1) % heroImages.length)}
+                  className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 hover:scale-110"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+
+                {/* Slide indicators */}
+                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                  {heroImages.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentSlide(index)}
+                      className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                        index === currentSlide ? 'bg-deep-red scale-125' : 'bg-white/50 hover:bg-white/75'
+                      }`}
+                    />
+                  ))}
+                </div>
+              </div>
+
+              {/* Decorative elements */}
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-deep-red/20 to-dark-red/20 rounded-full blur-xl"></div>
+              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-light-red/20 to-deep-red/20 rounded-full blur-xl"></div>
             </div>
           </div>
-        </div>
-
-        {/* Slide Indicators */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
-          {heroImages.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentSlide(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === currentSlide ? 'bg-deep-red scale-125' : 'bg-white/50 hover:bg-white/75'
-              }`}
-            />
-          ))}
         </div>
       </section>
 

@@ -5,8 +5,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Escorts In Bangalore - Premium Services',
-  description: 'Premium escort services in Bangalore with professional and discreet companions',
+  title: 'Loconto Escorts - Premium Call Girls in Bangalore',
+  description: 'No.1 escorts provider in Bengaluru. Satisfy your desires with Bengaluru call girls. The most stylish and fashionable elite escorts.',
 }
 
 export default function RootLayout({

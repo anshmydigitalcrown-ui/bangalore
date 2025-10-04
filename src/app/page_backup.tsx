@@ -198,8 +198,8 @@ export default function Home() {
             </div>
 
             {/* Service Card 2 */}
-            <div className="group bg-gradient-to-br from-black via-darker-bg to-deep-red/10 rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl border border-deep-red/30 transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:border-deep-red/50">
-              <div className="relative w-full h-96 bg-gradient-to-br from-black via-darker-bg to-deep-red/5">
+            <div className="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 hover:-translate-y-2">
+              <div className="relative w-full h-96 bg-gradient-to-br from-gray-100 to-gray-200">
                 <Image
                   src="/images/services/0b5d1573-9e45-410f-8d11-c7ce4dca44ee.jpg"
                   alt="Business Event Escort Companion Bangalore - Professional Services"
@@ -207,22 +207,22 @@ export default function Home() {
                   className="object-contain transition-transform duration-700 group-hover:scale-110"
                 />
                 {/* Badge */}
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-deep-red to-dark-red text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg border border-deep-red/50">
+                <div className="absolute top-4 left-4 bg-gradient-to-r from-pink-500 to-pink-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
                   CELEBRITY
                 </div>
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-bold text-white mb-3">Business Events</h3>
-                <p className="text-gray-300 text-base leading-relaxed mb-6">Star-Like Companions - Professional companions for corporate events and business meetings.</p>
-                <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl border border-deep-red/50">
+                <h3 className="text-2xl font-bold text-gray-800 mb-3">Business Events</h3>
+                <p className="text-gray-600 text-base leading-relaxed mb-6">Star-Like Companions - Professional companions for corporate events and business meetings.</p>
+                <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
                   Book Now
                 </button>
               </div>
             </div>
 
             {/* Service Card 3 */}
-            <div className="group bg-gradient-to-br from-black via-darker-bg to-deep-red/10 rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl border border-deep-red/30 transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:border-deep-red/50">
-              <div className="relative w-full h-96 bg-gradient-to-br from-black via-darker-bg to-deep-red/5">
+            <div className="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 hover:-translate-y-2">
+              <div className="relative w-full h-96 bg-gradient-to-br from-gray-100 to-gray-200">
                 <Image
                   src="/images/services/0db1ca63-7b06-430e-b62b-af8a85116dc8.jpg"
                   alt="Social Gathering Escort Services Bangalore - Elegant Companions"
@@ -230,22 +230,22 @@ export default function Home() {
                   className="object-contain transition-transform duration-700 group-hover:scale-110"
                 />
                 {/* Badge */}
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-deep-red to-dark-red text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg border border-deep-red/50">
+                <div className="absolute top-4 left-4 bg-gradient-to-r from-pink-500 to-pink-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
                   ELITE
                 </div>
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-bold text-white mb-3">Social Gatherings</h3>
-                <p className="text-gray-300 text-base leading-relaxed mb-6">Professional Model Services - Elegant companions for parties, dinners, and social events.</p>
-                <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl border border-deep-red/50">
+                <h3 className="text-2xl font-bold text-gray-800 mb-3">Social Gatherings</h3>
+                <p className="text-gray-600 text-base leading-relaxed mb-6">Professional Model Services - Elegant companions for parties, dinners, and social events.</p>
+                <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
                   Book Now
                 </button>
               </div>
             </div>
 
             {/* Service Card 4 */}
-            <div className="group bg-gradient-to-br from-black via-darker-bg to-deep-red/10 rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl border border-deep-red/30 transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:border-deep-red/50">
-              <div className="relative w-full h-96 bg-gradient-to-br from-black via-darker-bg to-deep-red/5">
+            <div className="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 hover:-translate-y-2">
+              <div className="relative w-full h-96 bg-gradient-to-br from-gray-100 to-gray-200">
                 <Image
                   src="/images/services/135e3343-4be0-4525-ad1d-8d54eddc4ca6.jpg"
                   alt="Travel Companion Escort Services Bangalore - Luxury Travel"
@@ -253,22 +253,22 @@ export default function Home() {
                   className="object-contain transition-transform duration-700 group-hover:scale-110"
                 />
                 {/* Badge */}
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-deep-red to-dark-red text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg border border-deep-red/50">
+                <div className="absolute top-4 left-4 bg-gradient-to-r from-pink-500 to-pink-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
                   VIP
                 </div>
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-bold text-white mb-3">Travel Companions</h3>
-                <p className="text-gray-300 text-base leading-relaxed mb-6">Premium VIP Service - Sophisticated travel partners for business trips and vacations.</p>
-                <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl border border-deep-red/50">
+                <h3 className="text-2xl font-bold text-gray-800 mb-3">Travel Companions</h3>
+                <p className="text-gray-600 text-base leading-relaxed mb-6">Premium VIP Service - Sophisticated travel partners for business trips and vacations.</p>
+                <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
                   Book Now
                 </button>
               </div>
             </div>
 
             {/* Service Card 5 */}
-            <div className="group bg-gradient-to-br from-black via-darker-bg to-deep-red/10 rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl border border-deep-red/30 transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:border-deep-red/50">
-              <div className="relative w-full h-96 bg-gradient-to-br from-black via-darker-bg to-deep-red/5">
+            <div className="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 hover:-translate-y-2">
+              <div className="relative w-full h-96 bg-gradient-to-br from-gray-100 to-gray-200">
                 <Image
                   src="/images/services/27f00dbd-6e40-40cf-b817-f5857d56fe2d.jpg"
                   alt="Private Party Escort Services Bangalore - Exclusive Entertainment"
@@ -276,22 +276,22 @@ export default function Home() {
                   className="object-contain transition-transform duration-700 group-hover:scale-110"
                 />
                 {/* Badge */}
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-deep-red to-dark-red text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg border border-deep-red/50">
+                <div className="absolute top-4 left-4 bg-gradient-to-r from-pink-500 to-pink-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
                   CELEBRITY
                 </div>
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-bold text-white mb-3">Private Parties</h3>
-                <p className="text-gray-300 text-base leading-relaxed mb-6">Star-Like Companions - Exclusive entertainment for private parties and intimate gatherings.</p>
-                <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl border border-deep-red/50">
+                <h3 className="text-2xl font-bold text-gray-800 mb-3">Private Parties</h3>
+                <p className="text-gray-600 text-base leading-relaxed mb-6">Star-Like Companions - Exclusive entertainment for private parties and intimate gatherings.</p>
+                <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
                   Book Now
                 </button>
               </div>
             </div>
 
             {/* Service Card 6 */}
-            <div className="group bg-gradient-to-br from-black via-darker-bg to-deep-red/10 rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl border border-deep-red/30 transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:border-deep-red/50">
-              <div className="relative w-full h-96 bg-gradient-to-br from-black via-darker-bg to-deep-red/5">
+            <div className="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 hover:-translate-y-2">
+              <div className="relative w-full h-96 bg-gradient-to-br from-gray-100 to-gray-200">
                 <Image
                   src="/images/services/307c151e-f300-4791-abe6-bbc9f549443c.jpg"
                   alt="Hotel Service Escort Bangalore - Luxury Hotel Companions"
@@ -299,22 +299,22 @@ export default function Home() {
                   className="object-contain transition-transform duration-700 group-hover:scale-110"
                 />
                 {/* Badge */}
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-deep-red to-dark-red text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg border border-deep-red/50">
+                <div className="absolute top-4 left-4 bg-gradient-to-r from-pink-500 to-pink-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
                   ELITE
                 </div>
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-bold text-white mb-3">Hotel Services</h3>
-                <p className="text-gray-300 text-base leading-relaxed mb-6">Professional Model Services - Discreet and professional services at luxury hotels.</p>
-                <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl border border-deep-red/50">
+                <h3 className="text-2xl font-bold text-gray-800 mb-3">Hotel Services</h3>
+                <p className="text-gray-600 text-base leading-relaxed mb-6">Professional Model Services - Discreet and professional services at luxury hotels.</p>
+                <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
                   Book Now
                 </button>
               </div>
             </div>
 
             {/* Service Card 7 */}
-            <div className="group bg-gradient-to-br from-black via-darker-bg to-deep-red/10 rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl border border-deep-red/30 transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:border-deep-red/50">
-              <div className="relative w-full h-96 bg-gradient-to-br from-black via-darker-bg to-deep-red/5">
+            <div className="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 hover:-translate-y-2">
+              <div className="relative w-full h-96 bg-gradient-to-br from-gray-100 to-gray-200">
                 <Image
                   src="/images/services/38d5679b-5fda-4ece-b6ba-65244ccae33e.jpg"
                   alt="Dinner Date Escort Services Bangalore - Fine Dining Companions"
@@ -322,22 +322,22 @@ export default function Home() {
                   className="object-contain transition-transform duration-700 group-hover:scale-110"
                 />
                 {/* Badge */}
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-deep-red to-dark-red text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg border border-deep-red/50">
+                <div className="absolute top-4 left-4 bg-gradient-to-r from-pink-500 to-pink-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
                   VIP
                 </div>
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-bold text-white mb-3">Dinner Dates</h3>
-                <p className="text-gray-300 text-base leading-relaxed mb-6">Premium VIP Service - Charming companions for fine dining and romantic evenings.</p>
-                <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl border border-deep-red/50">
+                <h3 className="text-2xl font-bold text-gray-800 mb-3">Dinner Dates</h3>
+                <p className="text-gray-600 text-base leading-relaxed mb-6">Premium VIP Service - Charming companions for fine dining and romantic evenings.</p>
+                <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
                   Book Now
                 </button>
               </div>
             </div>
 
             {/* Service Card 8 */}
-            <div className="group bg-gradient-to-br from-black via-darker-bg to-deep-red/10 rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl border border-deep-red/30 transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:border-deep-red/50">
-              <div className="relative w-full h-96 bg-gradient-to-br from-black via-darker-bg to-deep-red/5">
+            <div className="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 hover:-translate-y-2">
+              <div className="relative w-full h-96 bg-gradient-to-br from-gray-100 to-gray-200">
                 <Image
                   src="/images/services/5d8ab558-91fa-4acb-ba05-a48e016f918e.jpg"
                   alt="Weekend Escort Services Bangalore - Leisure Companions"
@@ -345,22 +345,22 @@ export default function Home() {
                   className="object-contain transition-transform duration-700 group-hover:scale-110"
                 />
                 {/* Badge */}
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-deep-red to-dark-red text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg border border-deep-red/50">
+                <div className="absolute top-4 left-4 bg-gradient-to-r from-pink-500 to-pink-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
                   CELEBRITY
                 </div>
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-bold text-white mb-3">Weekend Getaways</h3>
-                <p className="text-gray-300 text-base leading-relaxed mb-6">Star-Like Companions - Perfect companions for weekend trips and leisure activities.</p>
-                <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl border border-deep-red/50">
+                <h3 className="text-2xl font-bold text-gray-800 mb-3">Weekend Getaways</h3>
+                <p className="text-gray-600 text-base leading-relaxed mb-6">Star-Like Companions - Perfect companions for weekend trips and leisure activities.</p>
+                <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
                   Book Now
                 </button>
               </div>
             </div>
 
             {/* Service Card 9 */}
-            <div className="group bg-gradient-to-br from-black via-darker-bg to-deep-red/10 rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl border border-deep-red/30 transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:border-deep-red/50">
-              <div className="relative w-full h-96 bg-gradient-to-br from-black via-darker-bg to-deep-red/5">
+            <div className="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 hover:-translate-y-2">
+              <div className="relative w-full h-96 bg-gradient-to-br from-gray-100 to-gray-200">
                 <Image
                   src="/images/services/83f1c412-dd63-4621-8d86-4e0f6c302ea6.jpg"
                   alt="Outcall Escort Services Bangalore - Home Visit Companions"
@@ -368,22 +368,22 @@ export default function Home() {
                   className="object-contain transition-transform duration-700 group-hover:scale-110"
                 />
                 {/* Badge */}
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-deep-red to-dark-red text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg border border-deep-red/50">
+                <div className="absolute top-4 left-4 bg-gradient-to-r from-pink-500 to-pink-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
                   ELITE
                 </div>
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-bold text-white mb-3">Outcall Services</h3>
-                <p className="text-gray-300 text-base leading-relaxed mb-6">Professional Model Services - Professional companions available for outcall appointments.</p>
-                <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl border border-deep-red/50">
+                <h3 className="text-2xl font-bold text-gray-800 mb-3">Outcall Services</h3>
+                <p className="text-gray-600 text-base leading-relaxed mb-6">Professional Model Services - Professional companions available for outcall appointments.</p>
+                <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
                   Book Now
                 </button>
               </div>
             </div>
 
             {/* Service Card 10 */}
-            <div className="group bg-gradient-to-br from-black via-darker-bg to-deep-red/10 rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl border border-deep-red/30 transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:border-deep-red/50">
-              <div className="relative w-full h-96 bg-gradient-to-br from-black via-darker-bg to-deep-red/5">
+            <div className="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 hover:-translate-y-2">
+              <div className="relative w-full h-96 bg-gradient-to-br from-gray-100 to-gray-200">
                 <Image
                   src="/images/services/972dc74f-18d6-4cb6-bcb7-8778fde4487c.jpg"
                   alt="High Class Escort Services Bangalore - Premium Model Companions"
@@ -391,22 +391,22 @@ export default function Home() {
                   className="object-contain transition-transform duration-700 group-hover:scale-110"
                 />
                 {/* Badge */}
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-deep-red to-dark-red text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg border border-deep-red/50">
+                <div className="absolute top-4 left-4 bg-gradient-to-r from-pink-500 to-pink-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
                   VIP
                 </div>
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-bold text-white mb-3">High Class Models</h3>
-                <p className="text-gray-300 text-base leading-relaxed mb-6">Premium VIP Service - Elite model companions for the most discerning clientele.</p>
-                <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl border border-deep-red/50">
+                <h3 className="text-2xl font-bold text-gray-800 mb-3">High Class Models</h3>
+                <p className="text-gray-600 text-base leading-relaxed mb-6">Premium VIP Service - Elite model companions for the most discerning clientele.</p>
+                <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
                   Book Now
                 </button>
               </div>
             </div>
 
             {/* Service Card 11 */}
-            <div className="group bg-gradient-to-br from-black via-darker-bg to-deep-red/10 rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl border border-deep-red/30 transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:border-deep-red/50">
-              <div className="relative w-full h-96 bg-gradient-to-br from-black via-darker-bg to-deep-red/5">
+            <div className="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 hover:-translate-y-2">
+              <div className="relative w-full h-96 bg-gradient-to-br from-gray-100 to-gray-200">
                 <Image
                   src="/images/services/afeeef32-78c0-49d2-b27e-09e2cedd539c.jpg"
                   alt="Luxury Escort Services Bangalore - Premium Elite Companions"
@@ -414,22 +414,22 @@ export default function Home() {
                   className="object-contain transition-transform duration-700 group-hover:scale-110"
                 />
                 {/* Badge */}
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-deep-red to-dark-red text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg border border-deep-red/50">
+                <div className="absolute top-4 left-4 bg-gradient-to-r from-pink-500 to-pink-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
                   CELEBRITY
                 </div>
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-bold text-white mb-3">Luxury Services</h3>
-                <p className="text-gray-300 text-base leading-relaxed mb-6">Star-Like Companions - Ultimate luxury experiences with our premium companions.</p>
-                <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl border border-deep-red/50">
+                <h3 className="text-2xl font-bold text-gray-800 mb-3">Luxury Services</h3>
+                <p className="text-gray-600 text-base leading-relaxed mb-6">Star-Like Companions - Ultimate luxury experiences with our premium companions.</p>
+                <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
                   Book Now
                 </button>
               </div>
             </div>
 
             {/* Service Card 12 */}
-            <div className="group bg-gradient-to-br from-black via-darker-bg to-deep-red/10 rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl border border-deep-red/30 transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:border-deep-red/50">
-              <div className="relative w-full h-96 bg-gradient-to-br from-black via-darker-bg to-deep-red/5">
+            <div className="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 hover:-translate-y-2">
+              <div className="relative w-full h-96 bg-gradient-to-br from-gray-100 to-gray-200">
                 <Image
                   src="/images/services/download (22).jpg"
                   alt="24/7 Escort Services Bangalore - Round the Clock Companions"
@@ -437,14 +437,14 @@ export default function Home() {
                   className="object-contain transition-transform duration-700 group-hover:scale-110"
                 />
                 {/* Badge */}
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-deep-red to-dark-red text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg border border-deep-red/50">
+                <div className="absolute top-4 left-4 bg-gradient-to-r from-pink-500 to-pink-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
                   ELITE
                 </div>
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-bold text-white mb-3">24/7 Availability</h3>
-                <p className="text-gray-300 text-base leading-relaxed mb-6">Professional Model Services - Round-the-clock professional services available anytime.</p>
-                <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl border border-deep-red/50">
+                <h3 className="text-2xl font-bold text-gray-800 mb-3">24/7 Availability</h3>
+                <p className="text-gray-600 text-base leading-relaxed mb-6">Professional Model Services - Round-the-clock professional services available anytime.</p>
+                <button className="w-full bg-gradient-to-r from-deep-red to-dark-red hover:from-dark-red hover:to-deep-red text-white py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
                   Book Now
                 </button>
               </div>

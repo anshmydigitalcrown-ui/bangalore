@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -42,7 +43,7 @@ export default function Home() {
           </div>
           <div className="hidden md:flex space-x-8">
             <a href="#home" className="text-white hover:text-deep-red transition-colors">Home</a>
-            <a href="#services" className="text-white hover:text-deep-red transition-colors">Services</a>
+            <Link href="/services" className="text-white hover:text-deep-red transition-colors">Services</Link>
             <a href="#gallery" className="text-white hover:text-deep-red transition-colors">Gallery</a>
             <a href="#about" className="text-white hover:text-deep-red transition-colors">About</a>
             <a href="#contact" className="text-white hover:text-deep-red transition-colors">Contact</a>
@@ -450,6 +451,22 @@ export default function Home() {
               </div>
             </div>
           </div>
+          
+          {/* View All Services Button */}
+          <div className="text-center mt-16">
+            <Link 
+              href="/services"
+              className="inline-block bg-gradient-to-r from-deep-red to-dark-red text-white px-12 py-4 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl hover:shadow-deep-red/20 border-2 border-deep-red/50 hover:border-deep-red"
+            >
+              View All Services
+              <svg className="inline-block ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+            <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
+              Explore our complete range of premium escort services designed for sophisticated clientele in Bangalore
+            </p>
+          </div>
         </div>
       </section>
 
@@ -714,10 +731,10 @@ export default function Home() {
                   <span className="w-1.5 h-1.5 bg-deep-red rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
                   Home
                 </a></li>
-                <li><a href="#services" className="text-gray-300 hover:text-deep-red transition-colors duration-300 flex items-center group">
+                <li><Link href="/services" className="text-gray-300 hover:text-deep-red transition-colors duration-300 flex items-center group">
                   <span className="w-1.5 h-1.5 bg-deep-red rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
                   Services
-                </a></li>
+                </Link></li>
                 <li><a href="#gallery" className="text-gray-300 hover:text-deep-red transition-colors duration-300 flex items-center group">
                   <span className="w-1.5 h-1.5 bg-deep-red rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
                   Gallery

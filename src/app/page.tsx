@@ -120,54 +120,65 @@ export default function Home() {
             
             {/* Right side - Photo Slideshow */}
             <div className="relative">
-              <div className="bg-gradient-to-br from-deep-red/10 to-dark-red/10 rounded-2xl p-8 backdrop-blur-sm border border-deep-red/20">
+              <div className="bg-gradient-to-br from-deep-red/10 to-dark-red/10 rounded-3xl p-6 backdrop-blur-sm border border-deep-red/30 shadow-2xl">
                 <h3 className="text-2xl font-bold text-deep-red mb-6 text-center">Our Elite Companions</h3>
                 
                 {/* Slideshow Container */}
-                <div className="relative h-[500px] rounded-xl overflow-hidden group bg-gray-900">
+                <div className="relative w-full aspect-[3/4] max-w-sm mx-auto rounded-2xl overflow-hidden group bg-gradient-to-br from-gray-900 to-gray-800 shadow-xl">
                   {slides.map((slide, index) => (
                     <div 
                       key={index}
-                      className={`absolute inset-0 transition-opacity duration-500 flex items-center justify-center ${
-                        index === currentSlide ? 'opacity-100' : 'opacity-0'
+                      className={`absolute inset-0 transition-all duration-700 ease-in-out ${
+                        index === currentSlide ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
                       }`}
                     >
                       <Image
                         src={slide.src}
                         alt={slide.alt}
                         fill
-                        className="object-contain rounded-lg"
-                        style={{ objectPosition: 'center' }}
+                        className="object-cover rounded-2xl"
+                        style={{ objectPosition: 'center top' }}
                       />
+                      {/* Subtle gradient overlay for better text readability if needed */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-2xl"></div>
                     </div>
                   ))}
                   
                   {/* Navigation Arrows */}
                   <button 
-                    className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-deep-red/80 hover:bg-deep-red text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    className="absolute left-3 top-1/2 transform -translate-y-1/2 bg-deep-red/90 hover:bg-deep-red text-white p-2.5 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-lg hover:scale-110"
                     onClick={prevSlide}
+                    aria-label="Previous image"
                   >
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
                     </svg>
                   </button>
                   <button 
-                    className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-deep-red/80 hover:bg-deep-red text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    className="absolute right-3 top-1/2 transform -translate-y-1/2 bg-deep-red/90 hover:bg-deep-red text-white p-2.5 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-lg hover:scale-110"
                     onClick={nextSlide}
+                    aria-label="Next image"
                   >
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                     </svg>
                   </button>
+                  
+                  {/* Image Counter */}
+                  <div className="absolute top-4 right-4 bg-black/60 text-white px-3 py-1 rounded-full text-sm font-medium">
+                    {currentSlide + 1} / {slides.length}
+                  </div>
                 </div>
                 
                 {/* Slideshow Navigation Dots */}
-                <div className="flex justify-center mt-6 space-x-2">
+                <div className="flex justify-center mt-6 space-x-3">
                   {slides.map((_, index) => (
                     <button 
                       key={index}
-                      className={`w-3 h-3 rounded-full transition-colors ${
-                        index === currentSlide ? 'bg-deep-red' : 'bg-gray-600 hover:bg-deep-red'
+                      className={`transition-all duration-300 rounded-full ${
+                        index === currentSlide 
+                          ? 'w-8 h-3 bg-deep-red shadow-lg' 
+                          : 'w-3 h-3 bg-gray-500 hover:bg-deep-red/70 hover:scale-125'
                       }`}
                       onClick={() => goToSlide(index)}
                       aria-label={`View image ${index + 1}`}
@@ -176,13 +187,18 @@ export default function Home() {
                 </div>
                 
                 {/* Card Info */}
-                <div className="mt-6 text-center">
-                  <p className="text-gray-300 text-sm">
+                <div className="mt-6 text-center space-y-3">
+                  <p className="text-gray-300 text-sm leading-relaxed">
                     Browse through our collection of verified premium escorts
                   </p>
-                  <button className="mt-3 text-deep-red hover:text-light-red font-semibold text-sm transition-colors">
-                    View Full Gallery →
-                  </button>
+                  <div className="flex justify-center gap-4">
+                    <button className="bg-deep-red hover:bg-dark-red text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 hover:scale-105 shadow-lg">
+                      View Gallery
+                    </button>
+                    <button className="border-2 border-deep-red text-deep-red hover:bg-deep-red hover:text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 hover:scale-105">
+                      Contact Now
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

@@ -25,67 +25,16 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section id="home" className="relative px-6 py-20 min-h-screen flex items-center">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
+      <section id="home" className="relative min-h-screen flex items-center">
+        {/* Hero Image - Full Screen */}
+        <div className="w-full h-screen relative">
           <Image
             src="/images/hero/hero-banner.jpg"
-            alt="Premium Escort Services in Bangalore"
+            alt="Loconto Escorts Bangalore"
             fill
             className="object-cover object-center"
             priority
           />
-          <div className="absolute inset-0 bg-black/60"></div>
-        </div>
-        
-        {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto w-full">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left side - Text Content */}
-            <div className="text-left">
-              <h1 className="text-6xl md:text-8xl font-bold text-yellow-400 mb-4 tracking-wide">
-                LOCONTO ESCORTS
-              </h1>
-              <h2 className="text-2xl md:text-3xl font-semibold text-white mb-4">
-                NO.1 ESCORTS PROVIDER IN BENGALURU
-              </h2>
-              <p className="text-xl md:text-2xl text-white mb-6">
-                SATISFY YOUR DESIRES WITH BENGALURU CALL GIRLS
-              </p>
-              <p className="text-lg text-gray-300 mb-8 italic">
-                THE MOST STYLISH AND FASHIONABLE ELITE ESCORTS
-              </p>
-              
-              {/* Contact Information */}
-              <div className="space-y-4 mb-8">
-                <div className="flex items-center gap-3">
-                  <span className="text-yellow-400 font-semibold">CONTACT-US:</span>
-                  <a href="tel:9632777134" className="text-yellow-400 hover:text-yellow-300 transition-colors text-lg font-semibold">
-                    9632777134
-                  </a>
-                </div>
-                <div className="flex items-center gap-3">
-                  <span className="text-yellow-400 font-semibold">EMAIL-US:</span>
-                  <a href="mailto:loconto.net@gmail.com" className="text-yellow-400 hover:text-yellow-300 transition-colors text-lg">
-                    loconto.net@gmail.com
-                  </a>
-                </div>
-              </div>
-              
-              {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-yellow-400 hover:bg-yellow-500 text-black px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
-                  View Our Services
-                </button>
-                <button className="border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
-                  Contact Now
-                </button>
-              </div>
-            </div>
-            
-            {/* Right side - Image space (the background image covers this area) */}
-            <div className="hidden lg:block"></div>
-          </div>
         </div>
       </section>
 
